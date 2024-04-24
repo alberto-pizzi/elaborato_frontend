@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body div.app_bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: lightgrey;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+body div.app_bar *{
+    text-decoration: none;
+    color: black;
+}
+
+.nav_icons{
+    width: auto;
+    height: 20px;
+    display: inline-flex;
+    position: relative;
+
+    vertical-align: baseline;
+    background-color: blue;
+    margin-right: auto;
+    float: left;
+}
+
+body .nav_obj{
+    background-color: green;
+    justify-content: center;
+    display: flex;
+    margin: 10px auto;
+    max-width: 80%;
+}
+
+
+body ul *{
+    margin-left: 0px;
+}
+
+
+body div.nav_bar{
+    margin-left: auto;
+    background-color: deeppink;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: auto;
+
+}
+
+body div.nav_bar .nav_bar_item{
+    position: relative;
+    margin: 0 15px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+body div a#todays_paper{
+    font-weight: bold;
+}
+
+body div.today_box{
+    background-color: darkred;
+    vertical-align: center;
+    margin-right: auto;
+    padding: 5px
+}
+
+body div.today_box *{
+    font-size: 14px;
+}
+
+body div.head_banner{
+    background-color: aqua;
+    display: flex;
+    max-width: 80%;
+    margin: 10px auto 0;
+    justify-content: flex-start;
+}
+
+
+body div #logo{
+    background-color: yellow;
+    vertical-align: center;
+}
+
+body div.buttons_box{
+    background-color: blueviolet;
+    margin-left: auto;
+    display: flex;
+}
+
+body div.buttons_box .button{
+    padding: 10px;
+    font-weight: bold;
+}
+body div.buttons_box .button#sign_in{
+    text-decoration: underline;
+}
+
+body div.buttons_box .button#subscribe{
+    background-color: yellow;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
