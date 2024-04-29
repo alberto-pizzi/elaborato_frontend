@@ -3,6 +3,11 @@
     padding: 0;
     border: 0;
 }
+
+a{
+    text-decoration: none;
+}
+
 body div.app_bar{
     position: fixed;
     left: 0;
@@ -10,114 +15,169 @@ body div.app_bar{
     background-color: lightgrey;
     width: 100%;
     border-bottom: 1px solid grey;
+    margin: auto;
 }
 
 body div.app_bar *{
-    text-decoration: none;
-    color: black;
+    font-family: Grot10,Arial,sans-serif;
+    font-size: 12px;
 }
-
-.nav_icons{
-    width: auto;
-    height: 20px;
-    display: inline-flex;
-    position: relative;
-
-    vertical-align: baseline;
-    background-color: blue;
-    margin-right: auto;
-    float: left;
-}
-
-body .nav_obj{
-    background-color: green;
-    justify-content: center;
-    display: flex;
-    margin: 10px auto;
-    max-width: 80%;
-}
-
-
-body ul *{
-    margin-left: 0px;
-}
-
 
 body div.nav_bar{
     margin-left: auto;
+    margin-right: auto;
     background-color: deeppink;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: auto;
+    overflow: hidden;
+    align-items: center;
+    height: 1rem;
+}
 
+body div.nav_bar a{
+    text-transform: uppercase;
 }
 
 body div.nav_bar .nav_bar_item{
-    position: relative;
-    margin: 0 15px;
+    color: black;
+    margin-right: 20px;
     letter-spacing: 2px;
     transition: 0.6s;
 }
 
-body div a#todays_paper{
-    font-weight: bold;
+body .nav_obj{
+    /*
+    background-color: green;
+     */
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    margin: auto;
+    max-width: 1280px;
+    align-items: center;
+    height: 52px;
 }
 
-body div.today_box{
-    background-color: darkred;
-    vertical-align: center;
-    margin-right: auto;
-    padding: 5px
+body div.nav_icons{
+    display: inline-flex;
+    flex-wrap: nowrap;
 }
 
-body div.today_box *{
-    font-size: 14px;
+body .nav_icon{
+    padding: 8px;
+    width: auto;
+    height: 20px;
+    display: flex;
+    vertical-align: baseline;
+    background-color: blue;
+    float: left;
 }
 
 body div.head_banner{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 63px;
+    padding-top: 12px;
+}
+
+
+body div.today_box{
     background-color: aqua;
     display: flex;
-    max-width: 80%;
-    margin: 10px auto 0;
-    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0 10px;
 }
 
-body div.logo_box{
-    background-color: orange;
-    display: inline-flex;
-    width: 400px;
-    height: 45px;
+@media screen and (max-width: 1024px){
+    body div.today_box{
+        display: none;
+    }
 
+    body .nav_obj{
+        transform: translateY(-62px);
+        display: block;
+    }
+
+    body .nav_icon{
+        display: inline-block;
+    }
+
+    body #header_logo{
+        width: 325px;
+        height: 37px;
+    }
+
+
+    /*
+    body .nav_obj{
+        display: none;
+    }
+    */
 }
 
-body div #logo{
-    background-color: yellow;
-    vertical-align: center;
-    width: 100%;
-    height: 100%;
-    margin: auto;
+body div div.today_sub_box{
+    margin: auto 0;
+}
+
+body div.today_box a{
+    color: black;
+    font-weight: bold;
+}
+
+body div.today_sub_box>*{
+    margin-bottom: 8px;
+}
+
+body #header_logo{
+    width: 500px;
+    margin: 0 auto;
+    display: block;
 }
 
 body div.buttons_box{
-    background-color: blueviolet;
-    margin-left: auto;
+    background-color: chocolate;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 body div.buttons_box .button{
-    padding: 10px;
-    font-weight: bold;
+    font-weight: 900;
+    color: black;
+    text-transform: uppercase;
 }
+
+
 body div.buttons_box .button#sign_in{
     text-decoration: underline;
+    margin-right: 12px;
 }
 
 body div.buttons_box .button#subscribe{
-    background-color: yellow;
-    border-radius: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-
+    background-color: rgb(245, 235, 0);
+    border-radius: 4px;
+    padding: 8px;
+    width: 180px;
+    height: 54px;
+    letter-spacing: .08em;
+    border: 1px;
 }
 
+body div.buttons_box button div.subscribe_box{
+    text-transform: none;
+    font-weight: normal;
+    font-size: 11px;
+    max-height: 25px;
+}
+
+.logo {
+    fill:#000000;
+}
+
+@media screen and (max-width: 600px) {
+    #philadelphia { display: none; }
+    #the { transform: translate(0, 0); }
+    #inquirer { transform: translate(-50%, 0); }
+}
