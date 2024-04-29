@@ -14,6 +14,7 @@ body div.app_bar{
     top: 0;
     background-color: lightgrey;
     width: 100%;
+    height: 127px;
     border-bottom: 1px solid grey;
     margin: auto;
 }
@@ -47,9 +48,7 @@ body div.nav_bar .nav_bar_item{
 }
 
 body .nav_obj{
-    /*
     background-color: green;
-     */
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
     margin: auto;
@@ -90,32 +89,6 @@ body div.today_box{
     margin: 0 10px;
 }
 
-@media screen and (max-width: 1024px){
-    body div.today_box{
-        display: none;
-    }
-
-    body .nav_obj{
-        transform: translateY(-62px);
-        display: block;
-    }
-
-    body .nav_icon{
-        display: inline-block;
-    }
-
-    body #header_logo{
-        width: 325px;
-        height: 37px;
-    }
-
-
-    /*
-    body .nav_obj{
-        display: none;
-    }
-    */
-}
 
 body div div.today_sub_box{
     margin: auto 0;
@@ -128,6 +101,7 @@ body div.today_box a{
 
 body div.today_sub_box>*{
     margin-bottom: 8px;
+    display: block;
 }
 
 body #header_logo{
@@ -177,7 +151,63 @@ body div.buttons_box button div.subscribe_box{
 }
 
 @media screen and (max-width: 600px) {
-    #philadelphia { display: none; }
-    #the { transform: translate(0, 0); }
-    #inquirer { transform: translate(-50%, 0); }
+    #philadelphia{ display: none; }
+    #the{ transform: translate(0, 0); }
+    #inquirer{ transform: translate(-50%, 0); }
 }
+
+@media screen and (max-width: 1024px){
+    body div.app_bar{
+        height: 62px;
+    }
+
+
+
+    body div.today_box{
+        display: none;
+    }
+
+    body .nav_obj{
+        transform: translateY(-62px);
+        display: inline-flex;
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    body div.nav_obj .nav_bar{
+        display: none;
+    }
+
+    body .nav_icons{
+        display: block;
+        margin: 12px 0;
+    }
+
+    body #header_logo{
+        width: 325px;
+        height: 37px;
+    }
+
+    #header_logo,div.head_banner,div.app_bar{
+        transition: 0.5s;
+    }
+
+    body div.buttons_box .button#subscribe{
+        height: 38px;
+        padding: 0;
+    }
+
+    body div.subscribe_box{
+        display: none;
+    }
+
+
+    body div.head_banner{
+        padding-top: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
