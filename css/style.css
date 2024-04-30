@@ -159,6 +159,8 @@ body div.buttons_box button div.subscribe_box{
 @media screen and (max-width: 1024px){
     body div.app_bar{
         height: 62px;
+        display: flex;
+        justify-content: space-between;
     }
 
 
@@ -168,8 +170,10 @@ body div.buttons_box button div.subscribe_box{
     }
 
     body .nav_obj{
+        /*
         transform: translateY(-62px);
-        display: inline-flex;
+         */
+        display: block;
         width: fit-content;
         height: fit-content;
 
@@ -205,8 +209,7 @@ body div.buttons_box button div.subscribe_box{
 
     body div.head_banner{
         padding-top: 0;
-        display: flex;
-        justify-content: space-between;
+        display: contents;
     }
 
 }
