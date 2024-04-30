@@ -149,11 +149,8 @@ body div.buttons_box button div.subscribe_box{
     fill:#000000;
 }
 
-@media screen and (max-width: 600px) {
-    #philadelphia{ display: none; }
-    #the{ transform: translate(0, 0); }
-    #inquirer{ transform: translate(-50%, 0); }
-}
+
+
 
 @media screen and (max-width: 1024px){
     body div.app_bar{
@@ -215,6 +212,7 @@ body div.buttons_box button div.subscribe_box{
 
     body div.buttons_box .button#sign_in{
         text-decoration: none;
+        font-weight: 700;
     }
 
 
@@ -228,4 +226,24 @@ body div.buttons_box button div.subscribe_box{
     }
 
 }
+
+
+@media screen  and (max-width: 600px) {
+    #philadelphia{
+        display: none;
+    }
+    #the{
+        transform: translate(0, 0);
+    }
+    #inquirer{
+        transform: translate(-50%, 0);
+    }
+}
+
+
+
+
+
+
+
 
