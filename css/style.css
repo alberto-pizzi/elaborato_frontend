@@ -51,9 +51,9 @@ body .nav_obj{
     background-color: green;
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
-    margin: auto;
     max-width: 1280px;
     align-items: center;
+    margin: 0 auto;
     height: 52px;
 }
 
@@ -106,7 +106,6 @@ body div.today_sub_box>*{
 
 body #header_logo{
     width: 500px;
-    margin: 0 auto;
     display: block;
 }
 
@@ -159,8 +158,9 @@ body div.buttons_box button div.subscribe_box{
 @media screen and (max-width: 1024px){
     body div.app_bar{
         height: 62px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-bottom: 2px solid black;
     }
 
 
@@ -170,12 +170,11 @@ body div.buttons_box button div.subscribe_box{
     }
 
     body .nav_obj{
-        /*
-        transform: translateY(-62px);
-         */
         display: block;
         width: fit-content;
         height: fit-content;
+        order: initial;
+        margin: 0;
 
     }
 
@@ -185,16 +184,20 @@ body div.buttons_box button div.subscribe_box{
 
     body .nav_icons{
         display: block;
-        margin: 12px 0;
+        margin: 13px 0;
     }
 
     body #header_logo{
         width: 325px;
         height: 37px;
+        order: 2;
+        margin-top: auto;
+        margin-bottom: auto;
+
     }
 
-    #header_logo,div.head_banner,div.app_bar{
-        transition: 0.5s;
+    #header_logo,div.app_bar,.button{
+        transition: height .5s, width .5s;
     }
 
     body div.buttons_box .button#subscribe{
@@ -206,10 +209,22 @@ body div.buttons_box button div.subscribe_box{
         display: none;
     }
 
+    body .button#subscribe {
+        display: none;
+    }
+
+    body div.buttons_box .button#sign_in{
+        text-decoration: none;
+    }
+
 
     body div.head_banner{
         padding-top: 0;
         display: contents;
+    }
+
+    body div.buttons_box{
+        order: 3;
     }
 
 }
