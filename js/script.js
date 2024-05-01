@@ -30,6 +30,18 @@ changeSignInButton();
 media1024px.addEventListener("change",changeSignInButton);
 
 
+//hide and show search bar
+
+function toggleSearchBar(){
+    let searchBox = document.getElementById("search_box")
+    if (searchBox.style.display === "none"){
+        searchBox.style.display = "block"
+    } else{
+        searchBox.style.display = "none"
+    }
+}
+
+
 
 
 

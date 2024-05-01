@@ -155,7 +155,48 @@ body div.buttons_box button div.subscribe_box{
     fill:#000000;
 }
 
+#search_box, .app_bar{
+    display: block;
+}
 
+#search_box{
+    position: fixed;
+
+    display: none;
+    top: 129px;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .1);
+    width: 616px;
+    padding: 18px 28px;
+    background-color: aquamarine;
+    box-sizing: border-box;
+}
+
+.search_bar{
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: space-between;
+    background-color: chartreuse;
+    padding: 10px 18px;
+
+}
+
+.search_button{
+    height: 25px;
+    width: 25px;
+    background-color: orangered;
+}
+
+#search_icon{
+    width: 100%;
+}
+
+#search_input{
+    width: 100%;
+    background-color: darkred;
+
+}
 
 
 @media screen and (max-width: 1024px){
@@ -165,6 +206,10 @@ body div.buttons_box button div.subscribe_box{
         grid-template-columns: 1fr 1fr 1fr;
         border-bottom: 2px solid black;
         gap: 1rem;
+    }
+
+    #search_box{
+        top: 64px;
     }
 
 

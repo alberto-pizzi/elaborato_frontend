@@ -56,8 +56,12 @@
 
     <div class="nav_obj">
         <div class="nav_icons">
+            <button class="nav_button">
                 <img src="res/svg/menu_icon.svg" class="nav_icon" alt="Menu Icon" />
-                <img src="res/svg/search_icon.svg" class="nav_icon" alt="Search Icon" />
+            </button>
+            <button class="nav_button" onclick="toggleSearchBar()">
+                <img src="res/svg/search_icon.svg" class="nav_icon"  alt="Search Icon" />
+            </button>
         </div>
         <div class="nav_bar">
             <a class="nav_bar_item" href="">News</a>
@@ -77,6 +81,18 @@
     </div>
 
 </div>
+
+<div id="search_box">
+    <form class="search_bar" action="/search" method="get">
+        <input type="text" id="search_input" placeholder="Search">
+        <button type="submit" class="search_button">
+            <img src="res/svg/search_icon.svg" id="search_icon"  alt="Search Icon" />
+        </button>
+    </form>
+</div>
+
+
+
     <script src="js/script.js"></script>
 </body>
 </html>
