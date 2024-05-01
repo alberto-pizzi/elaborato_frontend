@@ -36,8 +36,16 @@ function toggleSearchBar(){
     let searchButton = document.getElementById("search_button")
     let leftPos = searchButton.getBoundingClientRect().left
     if (searchBox.style.display === "none"){
+
         searchBox.style.display = "block"
-        searchBox.style.left = leftPos + "px"
+
+        if (!media1024px.matches) {
+            searchBox.style.left = leftPos + "px"
+        }
+        else{
+            searchBox.style.left = "0px"
+        }
+
         searchButton.ariaExpanded = "true"
 
     } else{

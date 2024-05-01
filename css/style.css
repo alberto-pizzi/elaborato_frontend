@@ -155,7 +155,7 @@ body div.buttons_box button div.subscribe_box{
     fill:#000000;
 }
 
-#search_box, .app_bar{
+.app_bar{
     display: block;
 }
 
@@ -171,6 +171,7 @@ body div.buttons_box button div.subscribe_box{
     padding: 18px 28px;
     background-color: aquamarine;
     box-sizing: border-box;
+
 }
 
 .search_bar{
