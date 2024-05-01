@@ -17,6 +17,7 @@ body div.app_bar{
     height: 127px;
     border-bottom: 1px solid grey;
     margin: auto;
+
 }
 
 body div.app_bar *{
@@ -79,6 +80,7 @@ body div.head_banner{
     grid-template-columns: 1fr 1fr 1fr;
     height: 63px;
     padding-top: 12px;
+    gap: 1rem;
 }
 
 
@@ -111,9 +113,12 @@ body #header_logo{
 
 body div.buttons_box{
     background-color: chocolate;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: flex-end;
+    width: 100%;
+
+
 }
 
 body div.buttons_box .button{
@@ -136,6 +141,7 @@ body div.buttons_box .button#subscribe{
     height: 54px;
     letter-spacing: .08em;
     border: 1px;
+    margin-right: 12px;
 }
 
 body div.buttons_box button div.subscribe_box{
@@ -158,6 +164,7 @@ body div.buttons_box button div.subscribe_box{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         border-bottom: 2px solid black;
+        gap: 1rem;
     }
 
 
@@ -235,9 +242,29 @@ body div.buttons_box button div.subscribe_box{
     #the{
         transform: translate(0, 0);
     }
-    #inquirer{
+    #inquirer {
         transform: translate(-50%, 0);
     }
+    #philadelphia,#the,#inquirer{
+        transition: all .5s;
+    }
+
+    body #header_logo{
+        width: 140px;
+        height: 60px;
+        display: flex;
+        justify-self: center;
+
+    }
+
+    body svg{
+        transform: scale(2) translateX(25%);
+    }
+
+    body div.buttons_box .button#sign_in{
+        margin: 0;
+    }
+
 }
 
 
