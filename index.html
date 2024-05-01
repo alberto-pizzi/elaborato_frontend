@@ -59,28 +59,170 @@
             <button class="nav_button">
                 <img src="res/svg/menu_icon.svg" class="nav_icon" alt="Menu Icon" />
             </button>
-            <button class="nav_button" onclick="toggleSearchBar()">
+            <button class="nav_button" onclick="toggleSearchBar()" id="search_button" aria-expanded="false">
                 <img src="res/svg/search_icon.svg" class="nav_icon"  alt="Search Icon" />
             </button>
         </div>
         <div class="nav_bar">
-            <a class="nav_bar_item" href="">News</a>
-            <a class="nav_bar_item" href="">Sports</a>
-            <a class="nav_bar_item" href="">Betting</a>
-            <a class="nav_bar_item" href="">Business</a>
-            <a class="nav_bar_item" href="">Opinion</a>
-            <a class="nav_bar_item" href="">Politics</a>
-            <a class="nav_bar_item" href="">Entertainment</a>
-            <a class="nav_bar_item" href="">Life</a>
-            <a class="nav_bar_item" href="">Food</a>
-            <a class="nav_bar_item" href="">Health</a>
-            <a class="nav_bar_item" href="">Real Estate</a>
-            <a class="nav_bar_item" href="">Obituaries</a>
-            <a class="nav_bar_item" href="">Jobs</a>
+            <a class="nav_bar_item" href="#">News</a>
+            <a class="nav_bar_item" href="#">Sports</a>
+            <a class="nav_bar_item" href="#">Betting</a>
+            <a class="nav_bar_item" href="#">Business</a>
+            <a class="nav_bar_item" href="#">Opinion</a>
+            <a class="nav_bar_item" href="#">Politics</a>
+            <a class="nav_bar_item" href="#">Entertainment</a>
+            <a class="nav_bar_item" href="#">Life</a>
+            <a class="nav_bar_item" href="#">Food</a>
+            <a class="nav_bar_item" href="#">Health</a>
+            <a class="nav_bar_item" href="#">Real Estate</a>
+            <a class="nav_bar_item" href="#">Obituaries</a>
+            <a class="nav_bar_item" href="#">Jobs</a>
         </div>
     </div>
 
 </div>
+
+<div id="menu">
+
+    <!-- FIXME cambiare i testi -->
+    <div class="categories">
+        <div class="menu_sub_box">
+            <a class="menu_item title" href="#">News</a>
+            <a class="menu_item" href="#">Calcio</a>
+            <a class="menu_item" href="#">Basket</a>
+            <a class="menu_item" href="#">Volley</a>
+            <a class="menu_item" href="#">Nuoto</a>
+            <a class="menu_item" href="#">Bowling</a>
+            <a class="menu_item" href="#">Curling</a>
+            <a class="menu_item" href="#">Nuoto</a>
+            <a class="menu_item" href="#">Bowling</a>
+            <a class="menu_item" href="#">Curling</a>
+
+
+        </div>
+
+        <div class="menu_sub_box">
+            <a class="menu_item title" href="#">Politics</a>
+            <a class="menu_item" href="#">Calcio</a>
+            <a class="menu_item" href="#">Basket</a>
+            <a class="menu_item" href="#">Volley</a>
+            <a class="menu_item" href="#">Nuoto</a>
+            <a class="menu_item" href="#">Bowling</a>
+            <a class="menu_item" href="#">Curling</a>
+            <a class="menu_item" href="#">Volley</a>
+            <a class="menu_item" href="#">Nuoto</a>
+            <a class="menu_item" href="#">Bowling</a>
+            <a class="menu_item" href="#">Curling</a>
+            <a class="menu_item" href="#">Nuoto</a>
+
+        </div>
+
+        <div class="menu_sub_box">
+            <a class="menu_item title" href="#">Business</a>
+            <a class="menu_item" href="#">Calcio</a>
+            <a class="menu_item" href="#">Basket</a>
+            <a class="menu_item" href="#">Volley</a>
+            <a class="menu_item" href="#">Nuoto</a>
+            <a class="menu_item" href="#">Bowling</a>
+            <a class="menu_item" href="#">Curling</a>
+            <a class="menu_item" href="#">Volley</a>
+            <a class="menu_item" href="#">Nuoto</a>
+            <a class="menu_item" href="#">Bowling</a>
+            <a class="menu_item" href="#">Curling</a>
+            <a class="menu_item" href="#">Nuoto</a>
+
+        </div>
+
+
+        <div class="menu_sub_box">
+            <a class="menu_item title" href="#">Opinion</a>
+            <a class="menu_item" href="#">Calcio</a>
+            <a class="menu_item" href="#">Basket</a>
+            <a class="menu_item" href="#">Volley</a>
+            <a class="menu_item" href="#">Nuoto</a>
+            <a class="menu_item" href="#">Bowling</a>
+            <a class="menu_item" href="#">Curling</a>
+            <a class="menu_item" href="#">Volley</a>
+            <a class="menu_item" href="#">Nuoto</a>
+
+        </div>
+
+        <div class="menu_sub_box">
+            <a class="menu_item title" href="#">Life</a>
+            <a class="menu_item" href="#">Calcio</a>
+            <a class="menu_item" href="#">Basket</a>
+            <a class="menu_item" href="#">Volley</a>
+            <a class="menu_item" href="#">Nuoto</a>
+            <a class="menu_item" href="#">Bowling</a>
+            <a class="menu_item" href="#">Curling</a>
+            <a class="menu_item" href="#">Volley</a>
+            <a class="menu_item" href="#">Nuoto</a>
+
+        </div>
+
+        <div class="menu_sub_box">
+            <a class="menu_item title" href="#">Food</a>
+        </div>
+
+        <div class="menu_sub_box">
+            <a class="menu_item title" href="#">Health</a>
+        </div>
+
+        <div class="menu_sub_box">
+            <a class="menu_item title" href="#">Jobs</a>
+        </div>
+
+    </div>
+
+    <div class="secondary_categories">
+
+        <div class="menu_sub_box">
+            <a class="menu_item title secondary_title" href="#">Life</a>
+            <a class="menu_item subcategories" href="#">Calcio</a>
+            <a class="menu_item subcategories" href="#">Basket</a>
+            <a class="menu_item subcategories" href="#">Volley</a>
+            <a class="menu_item subcategories" href="#">Nuoto</a>
+        </div>
+
+        <div class="menu_sub_box">
+            <a class="menu_item title secondary_title" href="#">Opinion</a>
+            <a class="menu_item subcategories" href="#">Calcio</a>
+            <a class="menu_item subcategories" href="#">Basket</a>
+            <a class="menu_item subcategories" href="#">Volley</a>
+            <a class="menu_item subcategories" href="#">Basket</a>
+            <a class="menu_item subcategories" href="#">Volley</a>
+            <a class="menu_item subcategories" href="#">Nuoto</a>
+        </div>
+
+
+        <div class="menu_sub_box">
+            <a class="menu_item title secondary_title" href="#">Life</a>
+            <a class="menu_item subcategories" href="#">Calcio</a>
+            <a class="menu_item subcategories" href="#">Basket</a>
+            <a class="menu_item subcategories" href="#">Volley</a>
+            <a class="menu_item subcategories" href="#">Nuoto</a>
+        </div>
+
+        <div class="menu_sub_box">
+            <a class="menu_item title secondary_title" href="#">Opinion</a>
+            <a class="menu_item subcategories" href="#">Calcio</a>
+            <a class="menu_item subcategories" href="#">Basket</a>
+            <a class="menu_item subcategories" href="#">Volley</a>
+            <a class="menu_item subcategories" href="#">Basket</a>
+            <a class="menu_item subcategories" href="#">Volley</a>
+            <a class="menu_item subcategories" href="#">Nuoto</a>
+            <a class="menu_item subcategories" href="#">Basket</a>
+            <a class="menu_item subcategories" href="#">Volley</a>
+            <a class="menu_item subcategories" href="#">Nuoto</a>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
 
 <div id="search_box">
     <form class="search_bar" action="/search" method="get">

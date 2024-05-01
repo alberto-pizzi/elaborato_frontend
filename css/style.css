@@ -159,11 +159,13 @@ body div.buttons_box button div.subscribe_box{
     display: block;
 }
 
-#search_box{
-    position: fixed;
-
-    display: none;
+#search_box,#menu{
     top: 129px;
+    position: fixed;
+}
+
+#search_box{
+    display: none;
     box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .1);
     width: 616px;
     padding: 18px 28px;
@@ -174,7 +176,6 @@ body div.buttons_box button div.subscribe_box{
 .search_bar{
     border: 1px solid #c4c4c4;
     border-radius: 3px;
-
     display: flex;
     justify-content: space-between;
     background-color: chartreuse;
@@ -199,6 +200,73 @@ body div.buttons_box button div.subscribe_box{
 }
 
 
+
+#menu{
+    font-size: 14px;
+    font-family: Grot10,Arial,sans-serif;
+    height: 600px;
+    background-color: crimson;
+    max-width: 1280px;
+    display: flex;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+
+}
+
+
+
+#menu .menu_sub_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: goldenrod;
+    width: 200px;
+    height: fit-content;
+    margin: 10px 10px 0;
+}
+
+#menu .menu_item{
+    width: fit-content;
+    background-color: darkmagenta;
+    color: black;
+    margin: 1px 20px 2px 20px;
+
+}
+
+#menu .menu_item.title{
+    width: auto;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: -1px;
+    padding: 10px 10px 5px 20px;
+    margin: 0;
+}
+
+.categories,.secondary_categories{
+    background-color: greenyellow;
+    height: 100%;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.secondary_categories{
+    background-color: dodgerblue;
+
+}
+
+#menu .menu_item.title.secondary_title{
+    border-bottom: none;
+}
+
+#menu .menu_item.subcategories{
+    margin-left: 35px;
+}
+
+
 @media screen and (max-width: 1024px){
     body div.app_bar{
         height: 62px;
@@ -208,8 +276,9 @@ body div.buttons_box button div.subscribe_box{
         gap: 1rem;
     }
 
-    #search_box{
+    #search_box,#menu{
         top: 64px;
+        width: 100%;
     }
 
 
@@ -276,6 +345,18 @@ body div.buttons_box button div.subscribe_box{
     body div.buttons_box{
         order: 3;
     }
+
+    #menu{
+        flex-direction: column;
+        overflow: auto;
+        height: 100%;
+    }
+
+    .categories,.secondary_categories{
+        width: 100%;
+        align-items: center;
+    }
+
 
 }
 

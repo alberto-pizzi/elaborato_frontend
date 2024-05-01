@@ -31,16 +31,20 @@ media1024px.addEventListener("change",changeSignInButton);
 
 
 //hide and show search bar
-
 function toggleSearchBar(){
     let searchBox = document.getElementById("search_box")
+    let searchButton = document.getElementById("search_button")
+    let leftPos = searchButton.getBoundingClientRect().left
     if (searchBox.style.display === "none"){
         searchBox.style.display = "block"
+        searchBox.style.left = leftPos + "px"
+        searchButton.ariaExpanded = "true"
+
     } else{
         searchBox.style.display = "none"
+        searchButton.ariaExpanded = "false"
     }
 }
-
 
 
 
