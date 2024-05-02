@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body div.app_bar{
+body div.app_bar {
     position: fixed;
     left: 0;
     top: 0;
@@ -20,12 +20,12 @@ body div.app_bar{
 
 }
 
-body div.app_bar *{
-    font-family: Grot10,Arial,sans-serif;
+body div.app_bar * {
+    font-family: Grot10, Arial, sans-serif;
     font-size: 12px;
 }
 
-body div.nav_bar{
+body div.nav_bar {
     margin-left: auto;
     margin-right: auto;
     background-color: deeppink;
@@ -37,18 +37,18 @@ body div.nav_bar{
     height: 1rem;
 }
 
-body div.nav_bar a{
+body div.nav_bar a {
     text-transform: uppercase;
 }
 
-body div.nav_bar .nav_bar_item{
+body div.nav_bar .nav_bar_item {
     color: black;
     margin-right: 20px;
     letter-spacing: 2px;
     transition: 0.6s;
 }
 
-body .nav_obj{
+body .nav_obj {
     background-color: green;
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
@@ -58,12 +58,12 @@ body .nav_obj{
     height: 52px;
 }
 
-body div.nav_icons{
+body div.nav_icons {
     display: inline-flex;
     flex-wrap: nowrap;
 }
 
-body .nav_icon{
+body .nav_icon {
     padding: 8px;
     width: auto;
     height: 20px;
@@ -73,7 +73,7 @@ body .nav_icon{
     float: left;
 }
 
-body div.head_banner{
+body div.head_banner {
     max-width: 1280px;
     margin: 0 auto;
     display: grid;
@@ -84,7 +84,7 @@ body div.head_banner{
 }
 
 
-body div.today_box{
+body div.today_box {
     background-color: aqua;
     display: flex;
     flex-direction: column;
@@ -92,26 +92,26 @@ body div.today_box{
 }
 
 
-body div div.today_sub_box{
+body div div.today_sub_box {
     margin: auto 0;
 }
 
-body div.today_box a{
+body div.today_box a {
     color: black;
     font-weight: bold;
 }
 
-body div.today_sub_box>*{
+body div.today_sub_box > * {
     margin-bottom: 8px;
     display: block;
 }
 
-body #header_logo{
+body #header_logo {
     width: 500px;
     display: block;
 }
 
-body div.buttons_box{
+body div.buttons_box {
     background-color: chocolate;
     align-items: center;
     display: flex;
@@ -121,19 +121,19 @@ body div.buttons_box{
 
 }
 
-body div.buttons_box .button{
+body div.buttons_box .button {
     font-weight: 900;
     color: black;
     text-transform: uppercase;
 }
 
 
-body div.buttons_box .button#sign_in{
+body div.buttons_box .button#sign_in {
     text-decoration: underline;
     margin-right: 12px;
 }
 
-body div.buttons_box .button#subscribe{
+body div.buttons_box .button#subscribe {
     background-color: rgb(245, 235, 0);
     border-radius: 4px;
     padding: 8px;
@@ -144,7 +144,7 @@ body div.buttons_box .button#subscribe{
     margin-right: 12px;
 }
 
-body div.buttons_box button div.subscribe_box{
+body div.buttons_box button div.subscribe_box {
     text-transform: none;
     font-weight: normal;
     font-size: 11px;
@@ -152,19 +152,19 @@ body div.buttons_box button div.subscribe_box{
 }
 
 .logo {
-    fill:#000000;
+    fill: #000000;
 }
 
-.app_bar{
+.app_bar {
     display: block;
 }
 
-#search_box,#menu{
+#search_box, #menu {
     top: 129px;
     position: fixed;
 }
 
-#search_box{
+#search_box {
     display: none;
     box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .1);
     width: 616px;
@@ -174,7 +174,7 @@ body div.buttons_box button div.subscribe_box{
 
 }
 
-.search_bar{
+.search_bar {
     border: 1px solid #c4c4c4;
     border-radius: 3px;
     display: flex;
@@ -184,50 +184,51 @@ body div.buttons_box button div.subscribe_box{
 
 }
 
-.search_button{
+.search_button {
     height: 25px;
     width: 25px;
     background-color: orangered;
 }
 
-#search_icon{
+#search_icon {
     width: 100%;
 }
 
-#search_input{
+#search_input {
     width: 100%;
     background-color: darkred;
 
 }
 
 
-
-#menu{
+#menu {
     font-size: 14px;
-    font-family: Grot10,Arial,sans-serif;
+    font-family: Grot10, Arial, sans-serif;
     height: 600px;
     background-color: crimson;
     max-width: 1280px;
-    display: flex;
-    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    padding: 20px 20px 50px 20px;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .1);
+    align-items: center;
     box-sizing: border-box;
-
 }
 
 
-
-#menu .menu_sub_box{
+#menu .menu_sub_box {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     background-color: goldenrod;
-    width: 200px;
+    width: 220px;
     height: fit-content;
-    margin: 10px 10px 0;
+    padding-bottom: 12px;
+
 
 }
 
-#menu .menu_item{
+#menu .menu_item {
     width: fit-content;
     background-color: darkmagenta;
     color: black;
@@ -235,7 +236,7 @@ body div.buttons_box button div.subscribe_box{
 
 }
 
-#menu .menu_item.title{
+#menu .menu_item.title {
     width: auto;
     font-weight: bold;
     border-bottom: 1px solid grey;
@@ -246,16 +247,17 @@ body div.buttons_box button div.subscribe_box{
     margin: 0;
 }
 
-.categories{
+.categories {
     background-color: greenyellow;
-    height: 100%;
-    display: flex;
-    width: fit-content;
-    flex-direction: column;
-    flex-wrap: wrap;
+    height: fit-content;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    overflow: hidden;
 }
 
-.secondary_categories{
+.secondary_categories {
     display: grid;
     gap: 1rem;
     background-color: dodgerblue;
@@ -263,17 +265,17 @@ body div.buttons_box button div.subscribe_box{
 
 }
 
-#menu .menu_item.title.secondary_title{
+#menu .menu_item.title.secondary_title {
     border-bottom: none;
 }
 
-#menu .menu_item.subcategories{
+#menu .menu_item.subcategories {
     margin-left: 35px;
 }
 
 
-@media screen and (max-width: 1024px){
-    body div.app_bar{
+@media screen and (max-width: 1024px) {
+    body div.app_bar {
         height: 62px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -281,18 +283,17 @@ body div.buttons_box button div.subscribe_box{
         gap: 1rem;
     }
 
-    #search_box,#menu{
+    #search_box, #menu {
         top: 64px;
         width: 100%;
     }
 
 
-
-    body div.today_box{
+    body div.today_box {
         display: none;
     }
 
-    body .nav_obj{
+    body .nav_obj {
         display: block;
         width: fit-content;
         height: fit-content;
@@ -301,16 +302,16 @@ body div.buttons_box button div.subscribe_box{
 
     }
 
-    body div.nav_obj .nav_bar{
+    body div.nav_obj .nav_bar {
         display: none;
     }
 
-    body .nav_icons{
+    body .nav_icons {
         display: block;
         margin: 13px 0;
     }
 
-    body #header_logo{
+    body #header_logo {
         width: 325px;
         height: 37px;
         order: 2;
@@ -319,16 +320,16 @@ body div.buttons_box button div.subscribe_box{
 
     }
 
-    #header_logo,div.app_bar,.button{
+    #header_logo, div.app_bar, .button {
         transition: height .5s, width .5s;
     }
 
-    body div.buttons_box .button#subscribe{
+    body div.buttons_box .button#subscribe {
         height: 38px;
         padding: 0;
     }
 
-    body div.subscribe_box{
+    body div.subscribe_box {
         display: none;
     }
 
@@ -336,54 +337,62 @@ body div.buttons_box button div.subscribe_box{
         display: none;
     }
 
-    body div.buttons_box .button#sign_in{
+    body div.buttons_box .button#sign_in {
         text-decoration: none;
         font-weight: 700;
     }
 
 
-    body div.head_banner{
+    body div.head_banner {
         padding-top: 0;
         display: contents;
     }
 
-    body div.buttons_box{
+    body div.buttons_box {
         order: 3;
     }
 
-    #menu{
-        flex-direction: column;
+    #menu {
         overflow: auto;
         height: 100%;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 
-    .categories,.secondary_categories{
+    .categories, .secondary_categories {
         width: 100%;
+        height: max-content;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        grid-auto-columns: min-content;
     }
 
 
-
+    #menu .menu_sub_box {
+        justify-self: center;
+    }
 
 }
 
 
 @media screen  and (max-width: 600px) {
-    #philadelphia{
+    #philadelphia {
         display: none;
     }
-    #the{
+
+    #the {
         transform: translate(0, 0);
     }
+
     #inquirer {
         transform: translate(-50%, 0);
     }
-    #philadelphia,#the,#inquirer{
+
+    #philadelphia, #the, #inquirer {
         transition: all .5s;
     }
 
-    body #header_logo{
+    body #header_logo {
         width: 140px;
         height: 60px;
         display: flex;
@@ -391,14 +400,29 @@ body div.buttons_box button div.subscribe_box{
 
     }
 
-    body svg{
+    body svg {
         transform: scale(2) translateX(25%);
     }
 
-    body div.buttons_box .button#sign_in{
+    body div.buttons_box .button#sign_in {
         margin: 0;
     }
 
+
+}
+
+@media screen and (max-width: 480px) {
+    #menu {
+        padding: 28px 0;
+    }
+
+    .categories {
+        display: block;
+    }
+
+    #menu .menu_sub_box {
+        width: 100%;
+    }
 }
 
 
