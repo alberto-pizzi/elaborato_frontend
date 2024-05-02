@@ -31,29 +31,40 @@ media1024px.addEventListener("change",changeSignInButton);
 
 
 //hide and show search bar
-function toggleSearchBar(){
-    let searchBox = document.getElementById("search_box")
-    let searchButton = document.getElementById("search_button")
-    let leftPos = searchButton.getBoundingClientRect().left
-    if (searchBox.style.display === "none"){
 
-        searchBox.style.display = "block"
+function updateBoxLeftPos(container, key) {
+    let leftPos = key.getBoundingClientRect().left;
+    if (!media1024px.matches) {
+        container.style.left = leftPos + "px";
+    } else {
+        container.style.left = "0px";
+    }
+}
 
-        if (!media1024px.matches) {
-            searchBox.style.left = leftPos + "px"
+function toggleBox(box, button, display){
+    let container = document.querySelector('.popup_box' + '#' + box)
+    let key = document.getElementById(button)
+
+    let popupMenus = document.querySelectorAll('.popup_box[id]');
+    popupMenus.forEach(function(menu) {
+        if (menu !== container) {
+            menu.style.display = "none";
         }
-        else{
-            searchBox.style.left = "0px"
-        }
+    });
 
-        searchButton.ariaExpanded = "true"
+    if (container.style.display === "none"){
+        container.style.display = display
+        updateBoxLeftPos(container,key)
 
     } else{
-        searchBox.style.display = "none"
-        searchButton.ariaExpanded = "false"
+        container.style.display = "none"
     }
 }
 
 
-
-
+// update box pos when resize window
+window.addEventListener('resize', function() {
+    let searchBox = document.querySelector('.popup_box#search_box')
+    let searchButton = document.getElementById('search_button')
+    updateBoxLeftPos(searchBox, searchButton);
+});

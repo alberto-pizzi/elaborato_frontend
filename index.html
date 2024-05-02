@@ -56,10 +56,10 @@
 
     <div class="nav_obj">
         <div class="nav_icons">
-            <button class="nav_button">
-                <img src="res/svg/menu_icon.svg" class="nav_icon" alt="Menu Icon" />
+            <button class="nav_button" id="menu_button" onclick="toggleBox('menu','menu_button','grid')" >
+                <img src="res/svg/menu_icon.svg"  class="nav_icon" alt="Menu Icon" />
             </button>
-            <button class="nav_button" onclick="toggleSearchBar()" id="search_button" aria-expanded="false">
+            <button class="nav_button" id="search_button" onclick="toggleBox('search_box','search_button','block')" >
                 <img src="res/svg/search_icon.svg" class="nav_icon"  alt="Search Icon" />
             </button>
         </div>
@@ -82,7 +82,7 @@
 
 </div>
 
-<div id="menu">
+<div class="popup_box" id="menu">
 
     <!-- FIXME cambiare i testi -->
     <div class="categories">
@@ -238,7 +238,7 @@
 </div>
 
 
-<div id="search_box">
+<div class="popup_box" id="search_box">
     <form class="search_bar" action="/search" method="get">
         <input type="text" id="search_input" placeholder="Search">
         <button type="submit" class="search_button">
