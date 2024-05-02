@@ -224,6 +224,7 @@ body div.buttons_box button div.subscribe_box{
     width: 200px;
     height: fit-content;
     margin: 10px 10px 0;
+
 }
 
 #menu .menu_item{
@@ -245,7 +246,7 @@ body div.buttons_box button div.subscribe_box{
     margin: 0;
 }
 
-.categories,.secondary_categories{
+.categories{
     background-color: greenyellow;
     height: 100%;
     display: flex;
@@ -255,7 +256,10 @@ body div.buttons_box button div.subscribe_box{
 }
 
 .secondary_categories{
+    display: grid;
+    gap: 1rem;
     background-color: dodgerblue;
+    grid-template-columns: 1fr 1fr;
 
 }
 
@@ -355,8 +359,11 @@ body div.buttons_box button div.subscribe_box{
 
     .categories,.secondary_categories{
         width: 100%;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
     }
+
+
 
 
 }
