@@ -8,6 +8,44 @@ a {
     text-decoration: none;
 }
 
+footer{
+    background-color: #eee;
+    display: block;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    position: absolute;
+}
+
+.social_box a{
+    width: max-content;
+    height: max-content;
+}
+
+
+.sn_icon{
+    transform: scale(0.6);
+    margin: 3px;
+}
+
+.footer_sub_box{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 120px;
+    align-items: center;
+}
+
+.footer_links_box{
+    display: flex;
+
+
+}
+
+.footer_links_box *{
+    margin: 10px;
+}
+
+
 body div.app_bar {
     position: fixed;
     left: 0;
@@ -20,7 +58,7 @@ body div.app_bar {
 
 }
 
-body div.app_bar * {
+body div.app_bar *,footer {
     font-family: Grot10, Arial, sans-serif;
     font-size: 12px;
 }
