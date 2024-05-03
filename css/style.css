@@ -37,13 +37,16 @@ footer{
 
 .footer_links_box{
     display: flex;
-
+    flex-direction: column;
 
 }
 
 .footer_links_box *{
-    margin: 10px;
+    margin: 5px 10px 5px 0;
+    font-weight: 900;
 }
+
+
 
 
 body div.app_bar {
@@ -316,6 +319,16 @@ body div.buttons_box button div.subscribe_box {
 }
 
 
+.last_news_box{
+    background-color: cornflowerblue;
+}
+
+main{
+    display: block;
+
+}
+
+
 @media screen and (max-width: 1024px) {
     body div.app_bar {
         height: 62px;
@@ -414,6 +427,15 @@ body div.buttons_box button div.subscribe_box {
         justify-self: center;
     }
 
+}
+
+
+@media screen and (max-width: 767px){
+    .footer_sub_box{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 
