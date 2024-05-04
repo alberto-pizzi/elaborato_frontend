@@ -77,3 +77,9 @@ window.addEventListener('resize', function() {
     //updateBoxLeftPos(searchBox, searchButton);
     closeAllPopups()
 });
+
+
+//resize navbar when scrolling
+
+//TODO implementare funzione
+
