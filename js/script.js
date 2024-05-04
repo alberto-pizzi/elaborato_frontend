@@ -41,6 +41,13 @@ function updateBoxLeftPos(container, key) {
     }
 }
 
+function closeAllPopups(){
+    let popupMenus = document.querySelectorAll('.popup_box[id]');
+    popupMenus.forEach(function(menu) {
+            menu.style.display = "none";
+    });
+}
+
 function toggleBox(box, button, display){
     let container = document.querySelector('.popup_box' + '#' + box)
     let key = document.getElementById(button)
@@ -63,8 +70,10 @@ function toggleBox(box, button, display){
 
 
 // update box pos when resize window
+//FIXME scegliere cosa implementare (meglio chiusura popup)
 window.addEventListener('resize', function() {
     let searchBox = document.querySelector('.popup_box#search_box')
     let searchButton = document.getElementById('search_button')
-    updateBoxLeftPos(searchBox, searchButton);
+    //updateBoxLeftPos(searchBox, searchButton);
+    closeAllPopups()
 });
