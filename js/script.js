@@ -70,16 +70,18 @@ function toggleBox(box, button, display){
 
 
 // update box pos when resize window
-//FIXME scegliere cosa implementare (meglio chiusura popup)
 window.addEventListener('resize', function() {
-    let searchBox = document.querySelector('.popup_box#search_box')
-    let searchButton = document.getElementById('search_button')
-    //updateBoxLeftPos(searchBox, searchButton);
-    closeAllPopups()
+    let searchBox = document.querySelector('.popup_box#search_box');
+    let searchButton = document.getElementById('search_button');
+    closeAllPopups();
 });
 
 
 //resize navbar when scrolling
+window.addEventListener('scroll', function() {
+    let containers = document.querySelectorAll('.app_bar, .today_box, .nav_obj, .nav_bar, #header_logo, .button,.buttons_box .button#subscribe,.subscribe_box, .head_banner, .buttons_box, main');
 
-//TODO implementare funzione
-
+    containers.forEach(function (element) {
+        element.classList.toggle("reduced", window.scrollY > 100);
+    });
+});

@@ -60,7 +60,7 @@ footer{
 
 
 
-body div.app_bar {
+.app_bar {
     position: fixed;
     left: 0;
     top: 0;
@@ -72,7 +72,7 @@ body div.app_bar {
 
 }
 
-body div.app_bar *,footer {
+.app_bar *,footer {
     font-family: Grot10, Arial, sans-serif;
     font-size: 12px;
 }
@@ -100,7 +100,7 @@ body div.nav_bar .nav_bar_item {
     transition: 0.6s;
 }
 
-body .nav_obj {
+.nav_obj {
     background-color: green;
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
@@ -114,7 +114,7 @@ body div.nav_icons {
     flex-wrap: nowrap;
 }
 
-body .nav_icon {
+.nav_icon {
     padding: 8px;
     width: auto;
     height: 20px;
@@ -124,7 +124,7 @@ body .nav_icon {
     float: left;
 }
 
-body div.head_banner {
+.head_banner {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -134,7 +134,7 @@ body div.head_banner {
 }
 
 
-body div.today_box {
+.today_box {
     background-color: aqua;
     display: flex;
     flex-direction: column;
@@ -146,22 +146,22 @@ body div div.today_sub_box {
     margin: auto 0;
 }
 
-body div.today_box a {
+.today_box a {
     color: black;
     font-weight: bold;
 }
 
-body div.today_sub_box > * {
+.today_sub_box > * {
     margin-bottom: 8px;
     display: block;
 }
 
-body #header_logo {
+#header_logo {
     width: 500px;
     display: block;
 }
 
-body div.buttons_box {
+.buttons_box {
     background-color: chocolate;
     align-items: center;
     display: flex;
@@ -171,19 +171,19 @@ body div.buttons_box {
 
 }
 
-body div.buttons_box .button {
+.buttons_box .button {
     font-weight: 900;
     color: black;
     text-transform: uppercase;
 }
 
 
-body div.buttons_box .button#sign_in {
+.buttons_box .button#sign_in {
     text-decoration: underline;
     margin-right: 12px;
 }
 
-body div.buttons_box .button#subscribe {
+.buttons_box .button#subscribe {
     background-color: rgb(245, 235, 0);
     border-radius: 4px;
     padding: 8px;
@@ -194,7 +194,7 @@ body div.buttons_box .button#subscribe {
     margin-right: 12px;
 }
 
-body div.buttons_box button div.subscribe_box {
+.buttons_box button div.subscribe_box {
     text-transform: none;
     font-weight: normal;
     font-size: 11px;
@@ -393,60 +393,67 @@ section{
 
 
 
+.app_bar.reduced {
+    height: calc(var(--navbar-height-reduced) - 1px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    border-bottom: 2px solid black;
+}
+.today_box.reduced, .nav_obj .nav_bar.reduced, .subscribe_box.reduced {
+    display: none;
+}
+
+.nav_obj.reduced {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    order: initial;
+    margin: auto 0;
+
+}
+
+
+.nav_icons.reduced {
+    display: block;
+    margin: 13px 0;
+}
+#header_logo.reduced {
+    width: 325px;
+    height: 37px;
+    order: 2;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#header_logo,.app_bar,.button {
+    transition: height .5s, width .5s;
+}
+.buttons_box .button#subscribe.reduced {
+    height: 38px;
+    padding: 0;
+}
+.head_banner.reduced {
+    padding-top: 0;
+    display: contents;
+}
+.buttons_box.reduced {
+    order: 3;
+    width: fit-content;
+}
+main.reduced{
+    margin: calc(var(--navbar-height-reduced) + 1px) auto;
+}
+
+
+
+
 @media screen and (max-width: 1024px) {
-    body div.app_bar {
-        height: calc(var(--navbar-height-reduced) - 1px);
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        border-bottom: 2px solid black;
-        gap: 1rem;
-    }
 
     .popup_box#search_box, .popup_box#menu {
         top: calc(var(--navbar-height-reduced) + 1px);
         width: 100%;
     }
 
-
-    body div.today_box {
-        display: none;
-    }
-
-    body .nav_obj {
-        display: block;
-        width: fit-content;
-        height: fit-content;
-        order: initial;
-        margin: 0;
-
-    }
-
-    body div.nav_obj .nav_bar {
-        display: none;
-    }
-
-    body .nav_icons {
-        display: block;
-        margin: 13px 0;
-    }
-
-    body #header_logo {
-        width: 325px;
-        height: 37px;
-        order: 2;
-        margin-top: auto;
-        margin-bottom: auto;
-
-    }
-
-    #header_logo, div.app_bar, .button {
-        transition: height .5s, width .5s;
-    }
-
-    body div.buttons_box .button#subscribe {
-        height: 38px;
-        padding: 0;
-    }
 
     body div.subscribe_box {
         display: none;
@@ -456,20 +463,11 @@ section{
         display: none;
     }
 
-    body div.buttons_box .button#sign_in {
+    .buttons_box .button#sign_in {
         text-decoration: none;
         font-weight: 700;
     }
 
-
-    body div.head_banner {
-        padding-top: 0;
-        display: contents;
-    }
-
-    body div.buttons_box {
-        order: 3;
-    }
 
     .popup_box#menu {
         overflow: auto;
@@ -491,9 +489,7 @@ section{
         justify-self: center;
     }
 
-    main{
-        margin: calc(var(--navbar-height-reduced) + 1px) 0;
-    }
+
 
 
     section.last_news_box{
@@ -535,7 +531,7 @@ section{
         transition: all .5s;
     }
 
-    body #header_logo {
+    #header_logo {
         width: 140px;
         height: 60px;
         display: flex;
@@ -547,7 +543,7 @@ section{
         transform: scale(2) translateX(25%);
     }
 
-    body div.buttons_box .button#sign_in {
+    .buttons_box .button#sign_in {
         margin: 0;
     }
 
