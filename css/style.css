@@ -20,6 +20,10 @@ a {
     color: black;
 }
 
+.hidden_box{
+    display: contents;
+}
+
 footer{
     background-color: #eee;
     display: block;
@@ -131,6 +135,7 @@ body div.nav_icons {
     height: var(--navbar-height-reduced);
     padding-top: 12px;
     gap: 1rem;
+    justify-self: start;
 }
 
 
@@ -139,6 +144,7 @@ body div.nav_icons {
     display: flex;
     flex-direction: column;
     margin: 0 10px;
+    width: fit-content;
 }
 
 
@@ -166,8 +172,8 @@ body div div.today_sub_box {
     align-items: center;
     display: flex;
     justify-content: flex-end;
-    width: 100%;
-
+    width: fit-content;
+    justify-self: end;
 
 }
 
@@ -391,13 +397,19 @@ section{
     margin-bottom: 10px;
 }
 
+.hidden_box.reduced{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 1280px;
+    height: inherit;
+}
+
 
 
 .app_bar.reduced {
     height: calc(var(--navbar-height-reduced) - 1px);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
     border-bottom: 2px solid black;
 }
 .today_box.reduced, .nav_obj .nav_bar.reduced, .subscribe_box.reduced {
@@ -410,6 +422,7 @@ section{
     height: fit-content;
     order: initial;
     margin: auto 0;
+    justify-self: start;
 
 }
 
@@ -424,6 +437,8 @@ section{
     order: 2;
     margin-top: auto;
     margin-bottom: auto;
+    justify-self: center;
+
 }
 #header_logo,.app_bar,.button {
     transition: height .5s, width .5s;
@@ -439,6 +454,7 @@ section{
 .buttons_box.reduced {
     order: 3;
     width: fit-content;
+    justify-self: end;
 }
 main.reduced{
     margin: calc(var(--navbar-height-reduced) + 1px) auto;
