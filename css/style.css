@@ -626,6 +626,7 @@ main.reduced {
     margin: 0 16px 16px 0;
 }
 
+
 .education .articles {
     display: grid;
     grid-template-columns: 50fr 50fr;
@@ -649,7 +650,16 @@ main.reduced {
     padding-right: 20px;
 }
 
+.sport .articles{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem
+}
 
+.sport .articles :first-child{
+    grid-row: span 2 / span 2;
+    grid-column: span 2 / span 2;
+}
 
 
 @media screen and (max-width: 1024px) {
