@@ -365,15 +365,18 @@ section.last_news_box>div{
 }
 
 
-.box_title{
+.box_title {
     border-top: 3px solid black;
+    padding: .75rem 0 0;
+    margin-bottom: 16px;
+}
+
+.box_title h1{
     font-size: 32px;
     font-family: Grot12 Condensed, Arial Narrow, sans-serif;
     font-weight: 600;
-    padding: .75rem 0 0;
     text-transform: uppercase;
     letter-spacing: -1px;
-    margin-bottom: 16px;
 }
 
 
@@ -483,7 +486,7 @@ main.reduced{
     margin-bottom: 16px;
 }
 
-.news h1{
+.news h2{
     font-size: 24px;
     font-weight: 600;
     line-height: 1.5rem;
@@ -495,12 +498,12 @@ main.reduced{
     color: var(--desctiption-color);
 }
 
-.news h1:hover{
+.news h2:hover{
     color: var(--hover-color);
     transition: color .5s;
 }
 
-.news.first h1{
+.news.first h2{
     font-size: 32px;
 }
 
@@ -510,13 +513,14 @@ main.reduced{
 }
 .author{
     padding-top: 16px;
+    color: var(--title-color);
 }
 
 .author a{
     font-size: 16px;
-    color: var(--title-color);
 
 }
+
 
 .the_region .articles{
     display: grid;
@@ -546,9 +550,29 @@ main.reduced{
     margin-bottom: 16px;
 }
 
-.nation_and_world{
+.nation_and_world .articles{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.nation_and_world .author{
+    display: grid;
+    grid-template-columns: fit-content(100vw) auto;
+}
+
+.nation_and_world .author span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 4px;
+}
+
+.author time{
+    color: var(--desctiption-color);
+}
+.nation_and_world h2{
+    padding-top: 18px;
 }
 
 .nation_and_world .first{
