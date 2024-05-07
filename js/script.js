@@ -85,3 +85,5 @@ window.addEventListener('scroll', function() {
         element.classList.toggle("reduced", window.scrollY > 100);
     });
 });
+
+

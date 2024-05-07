@@ -534,7 +534,8 @@ main.reduced {
     gap: 32px;
 }
 
-.articles .first {
+
+.the_region .articles .first {
     grid-column: span 2;
 }
 
@@ -625,20 +626,30 @@ main.reduced {
     margin: 0 16px 16px 0;
 }
 
-
 .education .articles {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: 50fr 50fr;
+    gap: 1.5rem;
 }
 
-.education .first {
-    grid-column: span 4;
+.education .news.first {
+    grid-row: span 4;
 }
 
-.education .first_news {
-    grid-row: span 2/span 2;
-    grid-column: span 2/span 2;
+.education .news:not(:first-child) {
+    display: flex;
+    justify-content: space-between;
 }
+
+.education .news:not(:first-child):not(:last-child){
+    border-bottom: 1px solid var(--separator-color);
+}
+
+.education .news:not(:first-child) .image_box{
+    padding-right: 20px;
+}
+
+
 
 
 @media screen and (max-width: 1024px) {
