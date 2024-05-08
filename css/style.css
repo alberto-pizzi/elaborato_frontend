@@ -49,6 +49,9 @@ footer {
     justify-content: space-between;
     padding: 22px 120px;
     align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .footer_links_box {
@@ -274,12 +277,12 @@ body div div.today_sub_box {
     box-sizing: border-box;
 }
 
-.popup_box#menu, .nav_obj, .head_banner, main {
+.popup_box#menu, .nav_obj, .head_banner, main,aside {
     max-width: 1280px;
 }
 
 
-.popup_box#menu .menu_sub_box {
+.menu_sub_box {
     display: flex;
     flex-direction: column;
     background-color: goldenrod;
@@ -290,7 +293,7 @@ body div div.today_sub_box {
 
 }
 
-.popup_box#menu .menu_item {
+.menu_item {
     width: fit-content;
     background-color: darkmagenta;
     color: black;
@@ -298,7 +301,7 @@ body div div.today_sub_box {
 
 }
 
-.popup_box#menu .menu_item.title {
+.menu_item.title {
     width: auto;
     font-weight: bold;
     border-bottom: 1px solid grey;
@@ -340,7 +343,7 @@ body div div.today_sub_box {
     background-color: cornflowerblue;
 }
 
-main {
+main{
     display: block;
     margin: var(--navbar-height-extended) auto;
     padding: 20px;
@@ -660,6 +663,39 @@ main.reduced {
     grid-row: span 2 / span 2;
     grid-column: span 2 / span 2;
 }
+
+
+aside{
+    padding: 12px 0;
+    background-color: crimson;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    font-family: Grot10, Arial, sans-serif;
+    margin: 0 auto;
+}
+
+aside .aside_column{
+    margin: 12px auto;
+}
+
+aside .menu_sub_box{
+    width: 210px;
+}
+
+aside .menu_item{
+    margin: 0 0 12px;
+}
+
+aside .menu_item.title{
+    padding: 0 0 8px;
+    margin: 0 0 10px;
+}
+
+aside .last{
+    margin-bottom: 40px;
+}
+
 
 
 @media screen and (max-width: 1024px) {
