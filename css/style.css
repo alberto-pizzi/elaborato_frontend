@@ -594,7 +594,7 @@ main.reduced {
     grid-template-columns: fit-content(100vw) auto;
 }
 
-.nation_and_world .author span {
+.author span {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -605,14 +605,9 @@ main.reduced {
     color: var(--desctiption-color);
 }
 
-.nation_and_world h2 {
-    padding-top: 18px;
+.nation_and_world .image_box {
+    margin-bottom: 18px;
 }
-
-.nation_and_world .first {
-    grid-column: span 4;
-}
-
 
 .art {
     display: flex;
