@@ -41,6 +41,11 @@ function updateBoxLeftPos(container, key) {
     }
 }
 
+function updateBoxTopPos(container,key){
+    let topPos = key.getBoundingClientRect().bottom;
+    container.style.top = topPos + "px";
+}
+
 function closeAllPopups(){
     let popupMenus = document.querySelectorAll('.popup_box[id]');
     popupMenus.forEach(function(menu) {
@@ -51,6 +56,7 @@ function closeAllPopups(){
 function toggleBox(box, button, display){
     let container = document.querySelector('.popup_box' + '#' + box)
     let key = document.getElementById(button)
+    let navBar = document.querySelector('.app_bar');
 
     let popupMenus = document.querySelectorAll('.popup_box[id]');
     popupMenus.forEach(function(menu) {
@@ -60,11 +66,12 @@ function toggleBox(box, button, display){
     });
 
     if (container.style.display === "none"){
-        container.style.display = display
-        updateBoxLeftPos(container,key)
+        container.style.display = display;
+        updateBoxLeftPos(container,key);
+        updateBoxTopPos(container,navBar);
 
     } else{
-        container.style.display = "none"
+        container.style.display = "none";
     }
 }
 
