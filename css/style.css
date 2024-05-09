@@ -596,14 +596,14 @@ main.reduced {
     color: var(--desctiption-color);
 }
 
-.nation_and_world .image_box {
+.nation_and_world .image_box,.education .image_box,.sport .image_box {
     margin-bottom: 18px;
 }
 
 .art {
     display: flex;
     flex-direction: column;
-
+    margin-right: 24px;
 }
 
 .art .news:not(:last-child) {
@@ -618,6 +618,35 @@ main.reduced {
 .art .image_box{
     padding-right: 20px;
 }
+
+.art_sec{
+    display: flex;
+}
+
+.adv{
+
+    min-width: 300px;
+    margin: 20px 0;
+    background-color: lightcoral;
+    box-sizing: border-box;
+    display: none;
+    top: calc(var(--navbar-height-reduced) + 20px);
+    z-index: -1;
+
+}
+
+/* FIXME verificare compatibilità per Safari */
+@supports (position: sticky) {
+    .adv{
+        position: sticky;
+        display: block;
+    }
+}
+
+.art_sec .adv{
+    height: 250px;
+}
+
 
 .education .articles {
     display: grid;
