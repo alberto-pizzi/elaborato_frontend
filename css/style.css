@@ -372,8 +372,7 @@ section.last_news_box > div {
 
 .box_title {
     border-top: 3px solid black;
-    padding: .75rem 0 0;
-    margin-bottom: 16px;
+    padding: 16px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -493,10 +492,6 @@ main.reduced {
     margin-bottom: 16px;
 }
 
-/* FIXME rivedere */
-.last_news_box .news * {
-    margin-bottom: 16px;
-}
 
 .news h2 {
     font-size: 24px;
@@ -532,6 +527,8 @@ main.reduced {
 .author {
     padding-top: 16px;
     color: var(--title-color);
+    display: flex;
+    justify-content: flex-start;
 }
 
 .author a {
@@ -575,11 +572,10 @@ main.reduced {
 .arrow {
     width: 25px;
     height: auto;
-    fill: #1a6aff;
 }
 
 
-.the_region .news .articles_preview *:not(:last-child) {
+.news .articles_preview *:not(:last-child) {
     margin-bottom: 16px;
 }
 
@@ -588,12 +584,6 @@ main.reduced {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
 }
-
-.nation_and_world .author {
-    display: grid;
-    grid-template-columns: fit-content(100vw) auto;
-}
-
 .author span {
     white-space: nowrap;
     overflow: hidden;
