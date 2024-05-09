@@ -221,8 +221,11 @@ body div div.today_sub_box {
     display: block;
 }
 
-.popup_box#search_box, .popup_box#menu {
+.popup_box {
+    /*
     top: 129px;
+
+     */
     position: fixed;
 }
 
@@ -425,7 +428,10 @@ section {
 
 .app_bar.reduced {
     height: calc(var(--navbar-height-reduced) - 1px);
+}
 
+.popup_box.reduced{
+    top: var(--navbar-height-reduced);
 }
 
 .today_box.reduced, .nav_obj .nav_bar.reduced, .subscribe_box.reduced {

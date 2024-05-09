@@ -54,8 +54,8 @@ function closeAllPopups(){
 }
 
 function toggleBox(box, button, display){
-    let container = document.querySelector('.popup_box' + '#' + box)
-    let key = document.getElementById(button)
+    let container = document.querySelector('.popup_box' + '#' + box);
+    let key = document.getElementById(button);
     let navBar = document.querySelector('.app_bar');
 
     let popupMenus = document.querySelectorAll('.popup_box[id]');
@@ -68,7 +68,6 @@ function toggleBox(box, button, display){
     if (container.style.display === "none"){
         container.style.display = display;
         updateBoxLeftPos(container,key);
-        updateBoxTopPos(container,navBar);
 
     } else{
         container.style.display = "none";
@@ -86,11 +85,12 @@ window.addEventListener('resize', function() {
 
 //resize navbar when scrolling
 window.addEventListener('scroll', function() {
-    let containers = document.querySelectorAll('.app_bar, .today_box, .nav_obj, .nav_bar, #header_logo, .button,.buttons_box .button#subscribe,.subscribe_box,.hidden_box, .head_banner, .buttons_box, main');
+    let containers = document.querySelectorAll('.popup_box, .app_bar, .today_box, .nav_obj, .nav_bar, #header_logo, .button,.buttons_box .button#subscribe,.subscribe_box,.hidden_box, .head_banner, .buttons_box, main');
 
     containers.forEach(function (element) {
         element.classList.toggle("reduced", window.scrollY > 100);
     });
+
 });
 
 
