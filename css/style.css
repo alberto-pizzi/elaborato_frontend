@@ -508,6 +508,7 @@ main.reduced {
 .news p {
     font-size: 16px;
     color: var(--desctiption-color);
+    padding-top: 8px;
 }
 
 .news h2:hover {
@@ -610,18 +611,13 @@ main.reduced {
 }
 
 .art .news {
-    padding: 16px 0;
-}
-
-.art .news a {
     display: flex;
-
+    padding-top: 16px;
 }
 
-.art .news a img {
-    margin: 0 16px 16px 0;
+.art .image_box{
+    padding-right: 20px;
 }
-
 
 .education .articles {
     display: grid;
