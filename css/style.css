@@ -34,14 +34,18 @@ footer {
 }
 
 .social_box a {
-    width: max-content;
-    height: max-content;
+    width: fit-content;
+    height: fit-content;
+}
+
+.social_box a:not(:last-child){
+    margin-right: 24px;
 }
 
 
 .sn_icon {
-    transform: scale(0.6);
-    margin: 3px;
+    transform: scale(0.55);
+
 }
 
 .footer_sub_box {
@@ -501,6 +505,11 @@ main.reduced {
     margin-bottom: 12px;
 }
 
+.last_news_box .news h2{
+    font-size: 28px;
+}
+
+
 .news p {
     font-size: 16px;
     color: var(--desctiption-color);
@@ -511,11 +520,11 @@ main.reduced {
     transition: color .5s;
 }
 
-.news.first h2 {
+.news.first h2  {
     font-size: 32px;
 }
 
-.news.first p {
+.the_region .news.first p {
     font-size: 20px;
     max-width: 600px;
 }
@@ -527,7 +536,6 @@ main.reduced {
 
 .author a {
     font-size: 16px;
-
 }
 
 
@@ -571,7 +579,7 @@ main.reduced {
 }
 
 
-.the_region .news .articles_preview * {
+.the_region .news .articles_preview *:not(:last-child) {
     margin-bottom: 16px;
 }
 
