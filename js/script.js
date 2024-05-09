@@ -41,10 +41,6 @@ function updateBoxLeftPos(container, key) {
     }
 }
 
-function updateBoxTopPos(container,key){
-    let topPos = key.getBoundingClientRect().bottom;
-    container.style.top = topPos + "px";
-}
 
 function closeAllPopups(){
     let popupMenus = document.querySelectorAll('.popup_box[id]');
@@ -90,7 +86,6 @@ window.addEventListener('scroll', function() {
     containers.forEach(function (element) {
         element.classList.toggle("reduced", window.scrollY > 100);
     });
-
 });
 
 
