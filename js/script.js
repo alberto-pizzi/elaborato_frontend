@@ -25,6 +25,7 @@ function changeSignInButton(){
     }
 }
 
+//media queries variables
 let media1024px = window.matchMedia("(min-width: 1024px)");
 changeSignInButton();
 media1024px.addEventListener("change",changeSignInButton);
@@ -71,23 +72,41 @@ function toggleBox(box, button, display){
 }
 
 
-// update box pos when resize window
+//resize event
 window.addEventListener('resize', function() {
-    let searchBox = document.querySelector('.popup_box#search_box');
-    let searchButton = document.getElementById('search_button');
+    // update box pos when resize window
     closeAllPopups();
+    //extend or reduce elements when resize window
+    toggleExtend();
 });
 
-
-//resize navbar when scrolling
-window.addEventListener('scroll', function() {
+function toggleExtend(){
     let containers = document.querySelectorAll('.popup_box, .app_bar, .today_box, .nav_obj, .nav_bar, #header_logo, .button,.buttons_box .button#subscribe,.subscribe_box,.hidden_box, .head_banner, .buttons_box, main');
+    const extClassName = "extended";
 
     if (media1024px.matches) {
         containers.forEach(function (element) {
-            element.classList.toggle("extended", window.scrollY > 100);
+
+            if (window.scrollY < 100) {
+                element.classList.add(extClassName);
+            }
+            else{
+                element.classList.remove(extClassName);
+            }
         });
     }
+    else{
+        containers.forEach(function (element) {
+            element.classList.remove(extClassName);
+        });
+    }
+}
+
+
+//scroll event
+window.addEventListener('scroll', function() {
+    //resize navbar when scrolling
+    toggleExtend();
 });
 
 

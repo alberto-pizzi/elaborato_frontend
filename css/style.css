@@ -113,7 +113,7 @@ main {
 
 }
 
-/* FIXME da rivedere display */
+
 div.nav_icons {
     display: inline-flex;
     flex-wrap: nowrap;
@@ -170,16 +170,16 @@ div.nav_icons {
 .buttons_box .button#subscribe {
     background-color: rgb(245, 235, 0);
     border-radius: 4px;
-    padding: 8px;
+    padding: 0;
     width: 180px;
-    height: 54px;
+    height: 38px;
     letter-spacing: .08em;
     border: 1px;
     margin-right: 12px;
     display: none;
 }
 
-.buttons_box button div.subscribe_box {
+.subscribe_box {
     display: none;
     text-transform: none;
     font-weight: normal;
@@ -624,6 +624,13 @@ aside{
         transform: scale(1) translateX(0);
     }
 
+    #philadelphia{
+        display: block;
+    }
+    #inquirer {
+        transform: translate(0, 0);
+    }
+
 }
 
 
@@ -655,7 +662,7 @@ aside{
         text-transform: uppercase;
     }
 
-    div.nav_bar .nav_bar_item {
+    .nav_bar .nav_bar_item {
         color: black;
         margin-right: 20px;
         letter-spacing: 2px;
@@ -683,6 +690,10 @@ aside{
 
     .app_bar{
         border-bottom: 1px solid grey;
+        height: var(--navbar-height-reduced);
+    }
+
+    .app_bar.extended{
         height: var(--navbar-height-extended);
     }
 
@@ -718,12 +729,6 @@ aside{
         display: block;
     }
 
-    #philadelphia{
-        display: flow;
-    }
-    #inquirer {
-        transform: translate(0, 0);
-    }
 
     .buttons_box .button#sign_in {
         text-decoration: underline;
@@ -732,6 +737,15 @@ aside{
     }
 
     .buttons_box .button#subscribe{
+        display: block;
+    }
+
+    .buttons_box .button#subscribe.extended{
+        height: 54px;
+        padding: 8px;
+    }
+
+    .subscribe_box.extended{
         display: block;
     }
 
@@ -782,11 +796,6 @@ aside{
 
  */
 
-/* FIXME da mettere al posto giusto */
-    .buttons_box .button#subscribe.reduced {
-        height: 38px;
-        padding: 0;
-    }
 
 
     #the_region .articles {
