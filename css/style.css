@@ -114,9 +114,8 @@ main {
 }
 
 /* FIXME da rivedere display */
-.nav_icons {
+div.nav_icons {
     display: inline-flex;
-    margin: 13px 0;
     flex-wrap: nowrap;
 }
 
@@ -144,6 +143,8 @@ main {
     width: 140px;
     height: 60px;
     display: flex;
+    align-content: center;
+
 }
 
 .buttons_box {
@@ -178,7 +179,7 @@ main {
     display: none;
 }
 
-.buttons_box .subscribe_box {
+.buttons_box button div.subscribe_box {
     display: none;
     text-transform: none;
     font-weight: normal;
@@ -235,8 +236,9 @@ main {
     transition: all .5s;
 }
 
-svg {
+#header_logo svg {
     transform: scale(2) translateX(25%);
+
 }
 
 
@@ -612,6 +614,19 @@ aside{
     font-family: Grot10, Arial, sans-serif;
 }
 
+@media screen and (min-width: 600px) {
+    #header_logo{
+        width: 325px;
+        height: 37px;
+    }
+
+    #header_logo svg{
+        transform: scale(1) translateX(0);
+    }
+
+}
+
+
 @media screen and (min-width: 767px){
 
     .footer_sub_box{
@@ -640,7 +655,7 @@ aside{
         text-transform: uppercase;
     }
 
-    .nav_bar .nav_bar_item {
+    div.nav_bar .nav_bar_item {
         color: black;
         margin-right: 20px;
         letter-spacing: 2px;
