@@ -650,7 +650,7 @@ time {
 .adv.vertical {
     min-width: 300px;
     height: 250px;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .adv.horizontal {
@@ -667,6 +667,16 @@ time {
         position: sticky;
         display: block;
     }
+}
+
+.adv_title{
+    color: #999;
+    font-size: 9px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: gold;
+    text-align: center;
+    max-height: 100%;
 }
 
 
