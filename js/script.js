@@ -17,7 +17,7 @@ document.getElementById("todays_date").textContent = getTodaysDate();
 //interactive changes with media queries
 function changeSignInButton(){
 
-    if (media1024px.matches){
+    if (!media1024px.matches){
         document.getElementById("sign_in").textContent = "Sign in / sign up"
     }
     else{
@@ -25,7 +25,7 @@ function changeSignInButton(){
     }
 }
 
-let media1024px = window.matchMedia("(max-width: 1024px)");
+let media1024px = window.matchMedia("(min-width: 1024px)");
 changeSignInButton();
 media1024px.addEventListener("change",changeSignInButton);
 
@@ -83,9 +83,11 @@ window.addEventListener('resize', function() {
 window.addEventListener('scroll', function() {
     let containers = document.querySelectorAll('.popup_box, .app_bar, .today_box, .nav_obj, .nav_bar, #header_logo, .button,.buttons_box .button#subscribe,.subscribe_box,.hidden_box, .head_banner, .buttons_box, main');
 
-    containers.forEach(function (element) {
-        element.classList.toggle("reduced", window.scrollY > 100);
-    });
+    if (media1024px.matches) {
+        containers.forEach(function (element) {
+            element.classList.toggle("extended", window.scrollY > 100);
+        });
+    }
 });
 
 
