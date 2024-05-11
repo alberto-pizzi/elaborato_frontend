@@ -234,6 +234,7 @@ div.nav_icons {
 
 
 #header_logo svg {
+    width: 100%;
 
     transform: scale(2) translateX(25%);
 
@@ -609,13 +610,13 @@ aside{
     font-family: Grot10, Arial, sans-serif;
 }
 
-#header_logo svg,.app_bar, .button {
-    transition: height 5s, width 5s;
+#header_logo,.app_bar, .button {
+    transition: height .5s, width .5s;
 }
 
 
 @media screen and (max-width: 600px) {
-    #header_logo svg{
+    #header_logo{
         width: 140px;
         height: 60px;
     }
@@ -632,10 +633,13 @@ aside{
     }
 
 
-
-    #header_logo svg{
+    #header_logo{
         width: 325px;
         height: 37px;
+    }
+
+    #header_logo svg{
+
         transform: scale(1) translateX(0);
     }
 
@@ -737,14 +741,12 @@ aside{
         display: block;
         justify-self: center;
         align-content: center;
+        width: 500px;
+        height: auto;
     }
 
     #header_logo.extended svg{
-        width: 500px;
-        height: auto;
         justify-self: center;
-
-
     }
 
     .nav_bar.extended{
