@@ -558,7 +558,7 @@ section {
 
 }
 
-.news h2:hover, .correlated_articles_list a:hover, .last_news a:hover {
+.news h2:hover, .correlated_articles_list a:hover, .eyebrow a:hover,.latest_news li>a:hover {
     color: var(--hover-color);
     transition: color .3s;
 }
