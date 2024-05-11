@@ -9,6 +9,7 @@
     --separator-color: #c4c4c4;
     --hover-color: #1a6aff;
     --live-update-color: #e11d26;
+    --tag-color: rgba(255, 204, 85);
 }
 
 
@@ -439,7 +440,7 @@ div.nav_icons {
     justify-content: space-between;
 }
 
-.box_title h1, .onair_box span {
+.box_title h1, .onair_box span,.eyebrow {
     font-family: Grot12 Condensed, Arial Narrow, sans-serif;
 }
 
@@ -472,6 +473,34 @@ article {
     border-top: 1px solid var(--separator-color);
 
 }
+
+
+.eyebrow{
+    display: inline-flex;
+    padding: 0 .5rem 0 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.eyebrow_line{
+    display: inline;
+    padding: 0 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.eyebrow_line::after{
+    background-color: var(--tag-color);
+    bottom: -2px;
+    content: "";
+    height: 8px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+
 
 section {
     margin: 0 20px 20px 20px;
@@ -529,9 +558,9 @@ section {
 
 }
 
-.news h2:hover, .correlated_articles_list a:hover {
+.news h2:hover, .correlated_articles_list a:hover, .last_news a:hover {
     color: var(--hover-color);
-    transition: color .5s;
+    transition: color .3s;
 }
 
 .news.first h2 {
