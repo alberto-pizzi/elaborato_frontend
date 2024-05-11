@@ -2,6 +2,8 @@
     /* Sizes */
     --navbar-height-extended: 127px;
     --navbar-height-reduced: 63px;
+    --subscribe-button-max480px: 36px;
+    --1px: 1px;
 
     /* Colors */
     --title-color: #222222;
@@ -91,7 +93,7 @@ footer {
 
 main {
     display: block;
-    margin: calc(var(--navbar-height-reduced) + 1px) auto;
+    margin: calc(var(--navbar-height-reduced) + var(--subscribe-button-max480px) + var(--1px)) auto;
     padding: 0;
 
 }
@@ -185,14 +187,14 @@ div.nav_icons {
 
 .buttons_box .button#subscribe {
     background-color: rgb(245, 235, 0);
-    border-radius: 4px;
-    padding: 0;
-    width: 180px;
-    height: 38px;
+    width: 100%;
+    height: var(--subscribe-button-max480px);
     letter-spacing: .08em;
     border: 1px;
-    margin-right: 12px;
-    display: none;
+
+    position:fixed;
+    top: calc(var(--navbar-height-reduced) + 1px);
+
 }
 
 .subscribe_box {
@@ -385,7 +387,6 @@ div.nav_icons {
     width: 25px;
     height: auto;
 }
-
 #last_news_box .last_news {
     display: grid;
     grid-template-columns: 1fr;
@@ -743,6 +744,16 @@ aside {
     .the_latest_box {
         grid-column: span 2;
     }
+
+    .buttons_box .button#subscribe {
+        display: none;
+    }
+
+    main{
+        margin: calc(var(--navbar-height-reduced) + 1px) auto;
+    }
+
+
 }
 
 
@@ -893,6 +904,12 @@ aside {
 
     .buttons_box .button#subscribe {
         display: block;
+        border-radius: 4px;
+        padding: 0;
+        width: 180px;
+        height: 38px;
+        margin-right: 12px;
+        position: static;
     }
 
     .buttons_box .button#subscribe.extended {
