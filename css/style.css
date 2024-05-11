@@ -609,6 +609,10 @@ aside{
     font-family: Grot10, Arial, sans-serif;
 }
 
+#header_logo svg,.app_bar, .button {
+    transition: height 5s, width 5s;
+}
+
 
 @media screen and (max-width: 600px) {
     #header_logo svg{
@@ -725,9 +729,7 @@ aside{
     }
 
 
-    #header_logo svg,.app_bar, .button {
-        transition: height .5s, width .5s;
-    }
+
 
 
 

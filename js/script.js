@@ -28,6 +28,7 @@ function changeSignInButton(){
 //media queries variables
 let media1024px = window.matchMedia("(min-width: 1024px)");
 changeSignInButton();
+toggleExtend()
 media1024px.addEventListener("change",changeSignInButton);
 
 
