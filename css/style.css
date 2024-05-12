@@ -625,6 +625,10 @@ time {
 
 }
 
+#the_region .news{
+    flex-direction: row-reverse;
+}
+
 .news .articles_preview > *:not(:last-child) {
     margin-bottom: 16px;
 }
@@ -654,17 +658,11 @@ time {
     display: flex;
 }
 
-.news:not(:first-child) {
-    padding-top: 16px;
-}
 
 .art .image_box {
     padding-right: 20px;
 }
 
-.image_box {
-    align-self: center;
-}
 
 #education_section .news:not(:last-child) {
     border-bottom: 1px solid var(--separator-color);
@@ -741,6 +739,11 @@ aside {
     z-index: -1;
 }
 
+.articles_preview{
+    max-width: 100%;
+    width: 100%;
+}
+
 @media screen and (min-width: 480px) {
     #last_news_box .last_news {
         grid-template-columns: repeat(2, 1fr);
@@ -807,6 +810,25 @@ aside {
         flex-direction: row;
     }
 
+    #the_region .articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    #the_region .articles .first {
+        grid-column: span 2;
+    }
+
+    #nation_and_world .news {
+        flex-direction: column;
+    }
+
+    #nation_and_world .articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+    }
 
 }
 
@@ -974,25 +996,7 @@ aside {
         width: 220px;
     }
 
-    #the_region .articles {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
-    }
 
-    #the_region .articles .first {
-        grid-column: span 2;
-    }
-
-    #nation_and_world .news {
-        flex-direction: column;
-    }
-
-    #nation_and_world .articles {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 2rem;
-    }
 
 
     #education_section .articles {
@@ -1036,7 +1040,7 @@ aside {
 
 
     .adv.vertical {
-        width: 300px;
+        max-width: 300px;
         height: 250px;
     }
 
