@@ -119,7 +119,7 @@ main {
 
 }
 
-.today_box, .nav_obj .nav_bar, .subscribe_box {
+.today_box, .nav_obj .nav_bar {
     display: none;
 }
 
@@ -191,14 +191,22 @@ div.nav_icons {
     height: var(--subscribe-button-max480px);
     letter-spacing: .08em;
     border: 1px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position:fixed;
     top: calc(var(--navbar-height-reduced) + 1px);
+    cursor: pointer;
 
 }
 
+.buttons_box .button#subscribe>*{
+    margin-right: 5px;
+}
+
+
 .subscribe_box {
-    display: none;
+    display: block;
     text-transform: none;
     font-weight: normal;
     font-size: 11px;
@@ -706,10 +714,10 @@ aside {
     margin: 0 auto;
 
 }
-
+/* FIXME correggere width per schermi molto piccoli */
 .adv.vertical {
 
-    width: 300px;
+    max-width: 300px;
     height: 250px;
 
 }
@@ -732,7 +740,6 @@ aside {
     max-height: 100%;
     z-index: -1;
 }
-
 
 @media screen and (min-width: 480px) {
     #last_news_box .last_news {
@@ -915,6 +922,10 @@ aside {
     .buttons_box .button#subscribe.extended {
         height: 54px;
         padding: 8px;
+    }
+
+    .subscribe_box {
+        display: none;
     }
 
     .subscribe_box.extended {
