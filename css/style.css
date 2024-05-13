@@ -451,6 +451,10 @@ div.nav_icons {
 .box_title {
     border-top: 3px solid black;
     padding: 16px 0;
+
+}
+
+.box_title a{
     display: flex;
     justify-content: space-between;
 }
@@ -599,7 +603,7 @@ time {
     color: var(--desctiption-color);
 }
 
-.more a {
+.more {
     display: flex;
     justify-content: space-between;
     align-items: center;
