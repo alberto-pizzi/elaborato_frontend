@@ -98,6 +98,10 @@ main {
 
 }
 
+button{
+    cursor: pointer;
+}
+
 .app_bar *, footer {
     font-size: 12px;
 }
@@ -512,10 +516,8 @@ article {
 
 
 section {
-    margin: 0 20px 20px 20px;
     display: flex;
     flex-direction: column;
-
 }
 
 .hidden_box {

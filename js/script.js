@@ -28,7 +28,8 @@ function changeSignInButton(){
 //media queries variables
 let media1024px = window.matchMedia("(min-width: 1024px)");
 changeSignInButton();
-toggleExtend()
+closeAllPopups();
+toggleExtend();
 media1024px.addEventListener("change",changeSignInButton);
 
 
@@ -36,7 +37,7 @@ media1024px.addEventListener("change",changeSignInButton);
 
 function updateBoxLeftPos(container, key) {
     let leftPos = key.getBoundingClientRect().left;
-    if (!media1024px.matches) {
+    if (media1024px.matches) {
         container.style.left = leftPos + "px";
     } else {
         container.style.left = "0px";
