@@ -68,7 +68,7 @@ footer {
 .footer_sub_box {
     display: flex;
     justify-content: space-between;
-    padding: 22px 120px;
+    padding: 22px 25px;
     align-items: center;
     max-width: 1280px;
     margin: 0 auto;
@@ -696,7 +696,7 @@ aside {
     background-color: crimson;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
 }
 
 #header_logo, .app_bar, .button {
@@ -783,6 +783,14 @@ aside {
         width: 200px;
     }
 
+    aside {
+        background-color: crimson;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
 
 }
 
@@ -814,6 +822,10 @@ aside {
     #header_logo svg {
 
         transform: scale(1) translateX(0);
+    }
+
+    .footer_sub_box{
+        padding: 22px 120px;
     }
 
 }
@@ -1054,6 +1066,7 @@ aside {
     aside {
         padding: 12px 0;
         margin: 0 auto;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     }
 
     aside .aside_column {
