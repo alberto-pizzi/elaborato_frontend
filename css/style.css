@@ -98,11 +98,11 @@ main {
 
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-.app_bar *, footer {
+.head_banner, .nav_obj, footer {
     font-size: 12px;
 }
 
@@ -198,13 +198,13 @@ div.nav_icons {
     display: flex;
     align-items: center;
     justify-content: center;
-    position:fixed;
+    position: fixed;
     top: calc(var(--navbar-height-reduced) + 1px);
     cursor: pointer;
 
 }
 
-.buttons_box .button#subscribe>*{
+.buttons_box .button#subscribe > * {
     margin-right: 5px;
 }
 
@@ -239,12 +239,9 @@ div.nav_icons {
     width: 100%;
 }
 
-.popup_box#menu {
-    overflow: auto;
-    height: 100%;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 28px 0;
+
+.popup_box#menu a:hover {
+    text-decoration: underline;
 }
 
 .popup_box#menu .menu_sub_box {
@@ -320,16 +317,21 @@ div.nav_icons {
 
 
 .popup_box#menu {
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
     display: none;
     background-color: crimson;
-    grid-template-columns: 2fr 1fr;
+
     grid-gap: 1rem;
-    padding: 20px 20px 50px 20px;
     box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .1);
     align-items: center;
     box-sizing: border-box;
+
+    overflow: auto;
+    height: 100%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
 }
 
 .menu_sub_box {
@@ -377,7 +379,6 @@ div.nav_icons {
     width: 100%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
-    overflow: hidden;
 }
 
 .secondary_categories {
@@ -399,6 +400,7 @@ div.nav_icons {
     width: 25px;
     height: auto;
 }
+
 #last_news_box .last_news {
     display: grid;
     grid-template-columns: 1fr;
@@ -453,7 +455,7 @@ div.nav_icons {
     justify-content: space-between;
 }
 
-.box_title h1, .onair_box span,.eyebrow {
+.box_title h1, .onair_box span, .eyebrow {
     font-family: Grot12 Condensed, Arial Narrow, sans-serif;
 }
 
@@ -488,21 +490,21 @@ article {
 }
 
 
-.eyebrow{
+.eyebrow {
     display: inline-flex;
     padding: 0 .5rem 0 0;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.eyebrow_line{
+.eyebrow_line {
     display: inline;
     padding: 0 5px;
     position: relative;
     z-index: 1;
 }
 
-.eyebrow_line::after{
+.eyebrow_line::after {
     background-color: var(--tag-color);
     bottom: -2px;
     content: "";
@@ -512,7 +514,6 @@ article {
     width: 100%;
     z-index: -1;
 }
-
 
 
 section {
@@ -569,7 +570,7 @@ section {
 
 }
 
-.news h2:hover, .correlated_articles_list a:hover, .eyebrow a:hover,.latest_news li>a:hover {
+.news h2:hover, .correlated_articles_list a:hover, .eyebrow a:hover, .latest_news li > a:hover {
     color: var(--hover-color);
     transition: color .3s;
 }
@@ -627,7 +628,7 @@ time {
 
 }
 
-#the_region .news{
+#the_region .news {
     flex-direction: row-reverse;
 }
 
@@ -714,6 +715,7 @@ aside {
     margin: 0 auto;
 
 }
+
 /* FIXME correggere width per schermi molto piccoli */
 .adv.vertical {
 
@@ -741,7 +743,7 @@ aside {
     z-index: -1;
 }
 
-.articles_preview{
+.articles_preview {
     max-width: 100%;
     width: 100%;
 }
@@ -761,8 +763,24 @@ aside {
         display: none;
     }
 
-    main{
+    main {
         margin: calc(var(--navbar-height-reduced) + 1px) auto;
+    }
+
+    .categories {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .popup_box#menu {
+        padding: 20px 20px 50px;
+    }
+
+    .popup_box#menu .menu_sub_box {
+        justify-self: center;
+        max-width: 220px;
+        width: 200px;
     }
 
 
@@ -956,13 +974,19 @@ aside {
         display: block;
     }
 
-    .popup_box.extended{
+    .popup_box {
+        overflow: hidden;
+    }
+
+    .popup_box.extended {
         top: calc(var(--navbar-height-extended) + 1px);
     }
 
 
     .popup_box#menu {
-        height: 600px;
+        height: auto;
+        grid-template-columns: 2fr 1fr;
+        padding: 20px 20px 50px;
     }
 
     .popup_box#search_box {
@@ -980,6 +1004,13 @@ aside {
 
     .popup_box#menu .menu_item.subcategories {
         margin-left: 35px;
+    }
+
+    .categories {
+        height: fit-content;
+        width: 100%;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        overflow: hidden;
     }
 
 
@@ -1001,8 +1032,6 @@ aside {
     .menu_sub_box {
         width: 220px;
     }
-
-
 
 
     #education_section .articles {
