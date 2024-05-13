@@ -234,7 +234,7 @@ div.nav_icons {
 }
 
 
-.popup_box#search_box, .popup_box#menu {
+.popup_box {
     top: calc(var(--navbar-height-reduced) + 1px);
     width: 100%;
 }
@@ -954,6 +954,10 @@ aside {
 
     .subscribe_box.extended {
         display: block;
+    }
+
+    .popup_box.extended{
+        top: calc(var(--navbar-height-extended) + 1px);
     }
 
 
