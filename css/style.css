@@ -550,7 +550,7 @@ section {
 .news h2 {
     font-size: 20px;
     font-weight: 600;
-    line-height: 1.5rem;
+    line-height: 1.1rem;
     margin-bottom: 12px;
 }
 
@@ -640,7 +640,7 @@ time {
 }
 
 
-.the_region .news, .nation_and_world .news {
+.the_region .news, .nation_and_world .news,.inquirer_newsletters .news {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--separator-color);
@@ -724,7 +724,7 @@ aside {
 }
 
 .adv_box {
-    margin: 20px 0;
+    margin: 20px;
     z-index: -1;
 }
 
@@ -739,7 +739,7 @@ aside {
 /* FIXME correggere width per schermi molto piccoli */
 .adv.vertical {
 
-    max-width: 300px;
+    width: 300px;
     height: 250px;
 
 }
@@ -785,6 +785,14 @@ aside {
 
 .the_region .other_news .image_box{
     flex: 0 0 25%;
+}
+
+.inquirer_newsletters .news,.nation_and_world .news{
+    margin: 20px 20px 0;
+}
+
+.inquirer_newsletters .news .image_box,.nation_and_world .news .image_box{
+    padding: 0 20px 0 0;
 }
 
 
@@ -858,6 +866,19 @@ aside {
 
     }
 
+    .nation_and_world .articles{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nation_and_world .news{
+        margin: 20px 20px 0;
+    }
+
+    .nation_and_world .news .image_box{
+        padding-right: 20px;
+    }
+
 }
 
 
@@ -919,14 +940,24 @@ aside {
         grid-template-columns: 1fr 1fr;
     }
 
-    .nation_and_world .news {
+    .nation_and_world .news,.inquirer_newsletters .news {
         flex-direction: column;
+        margin: 0;
+        border: none;
     }
 
-    .nation_and_world .articles {
+    .nation_and_world .articles,.inquirer_newsletters .articles {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2rem;
+    }
+
+    .inquirer_newsletters .news .image_box,.nation_and_world .news .image_box{
+        padding: 0
+    }
+
+    .nation_and_world .articles,.inquirer_newsletters .articles{
+        margin: 0 20px;
     }
 
     .the_region .other_news_2{
