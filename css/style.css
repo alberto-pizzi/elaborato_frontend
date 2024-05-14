@@ -459,6 +459,7 @@ div.nav_icons {
 .box_title a{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .box_title h1, .onair_box span, .eyebrow {
@@ -739,7 +740,7 @@ aside {
 /* FIXME correggere width per schermi molto piccoli */
 .adv.vertical {
 
-    width: 300px;
+    max-width: 300px;
     height: 250px;
 
 }
@@ -793,6 +794,23 @@ aside {
 
 .inquirer_newsletters .news .image_box,.nation_and_world .news .image_box{
     padding: 0 20px 0 0;
+    min-width: 60px;
+}
+
+@media screen and (max-width: 280px){
+    section *{
+        overflow: hidden;
+    }
+    .articles_preview{
+        min-width: 100px;
+
+    }
+    .news{
+        min-width: 200px;
+        overflow: hidden;
+    }
+
+
 }
 
 
@@ -879,6 +897,9 @@ aside {
         padding-right: 20px;
     }
 
+    .art_section .news p,.sport_section .news p{
+        font-size: 16px;
+    }
 }
 
 
@@ -1214,6 +1235,10 @@ aside {
             position: sticky;
             display: block;
         }
+    }
+
+    .news h2 {
+        font-size: 24px;
     }
 
 }
