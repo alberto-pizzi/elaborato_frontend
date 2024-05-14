@@ -709,7 +709,7 @@ time {
     gap: 1rem;
 }
 
-.sport_section .articles :first-child {
+.sport_section .articles .news.first {
     grid-row: span 2 / span 2;
     grid-column: span 2 / span 2;
 }
@@ -794,6 +794,10 @@ aside {
 }
 
 .art_section .news:not(:first-child){
+    margin-top: 16px;
+}
+
+.sport_section .articles_preview{
     margin-top: 16px;
 }
 
@@ -944,7 +948,6 @@ aside {
 }
 
 
-
 @media screen and (min-width: 767px) {
 
     .footer_sub_box {
@@ -994,6 +997,11 @@ aside {
 
     .the_region .other_news_2 .news{
         border: none;
+    }
+
+    .sport_section .articles {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.5rem;
     }
 
 }
@@ -1190,11 +1198,6 @@ aside {
         grid-row: span 4;
     }
 
-
-    .sport_section .articles {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 1.5rem;
-    }
 
 
     aside {
