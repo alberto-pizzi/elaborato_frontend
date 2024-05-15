@@ -487,9 +487,6 @@ article {
     padding: 12px 0;
 }
 
-.latest_news * {
-    font-size: 14px;
-}
 
 .latest_news > li:not(:first-child) {
     border-top: 1px solid var(--separator-color);
@@ -803,6 +800,11 @@ aside {
 
 
 
+.last_news_box .main_news_box .news:not(:last-child){
+    border-bottom: 1px solid var(--separator-color);
+}
+
+
 @media screen and (max-width: 280px){
     section *{
         overflow: hidden;
@@ -992,7 +994,8 @@ aside {
 
 
     .the_region .other_news_2{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .the_region .other_news_2 .news{
