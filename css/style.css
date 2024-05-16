@@ -550,7 +550,7 @@ section {
 .news h2 {
     font-size: 20px;
     font-weight: 600;
-    line-height: 1.1rem;
+    line-height: 1.4rem;
     margin-bottom: 12px;
 }
 
@@ -686,7 +686,7 @@ time {
 }
 
 
-.education_section .news:not(:last-child) {
+.education_section .other_news .news:not(:last-child) {
     border-bottom: 1px solid var(--separator-color);
 }
 
@@ -771,15 +771,6 @@ aside {
     max-width: 100%;
 }
 
-/*
-.main_news .articles_preview {
-    padding: 20px 20px 0;
-}
-
-
-
- */
-
 
 .the_region .other_news .image_box{
     padding-left: 20px;
@@ -812,17 +803,24 @@ aside {
 
 
 @media screen and (max-width: 280px){
+
     section *{
         overflow: hidden;
+    }
+    .app_bar,main{
+        overflow-x: auto;
     }
     .articles_preview{
         min-width: 100px;
 
     }
-    .nation_and_world .articles,.the_region .other_news{
+    .the_region .other_news{
         min-width: 300px;
 
+    }
 
+    .nation_and_world *{
+        overflow: hidden;
     }
 
 
@@ -833,7 +831,7 @@ aside {
     .the_region .news.first .image_box,.education_section .news.first .image_box,.sport_section .news.first .image_box{
         width: 100vw;
         margin-left: calc(-1 * var(--left-right-section-margin));
-        margin-bottom: 16px;
+        margin-bottom: 20px;
     }
 }
 
@@ -919,6 +917,16 @@ aside {
 
     .art_section .news p,.sport_section .news p{
         font-size: 16px;
+    }
+
+    .education_section .articles {
+        display: grid;
+        grid-template-columns: 50fr 50fr;
+        gap: 1.5rem;
+    }
+
+    .education_section .news.first .image_box{
+        margin-bottom: 8px;
     }
 
 }
@@ -1207,15 +1215,6 @@ aside {
     }
 
 
-    .education_section .articles {
-        display: grid;
-        grid-template-columns: 50fr 50fr;
-        gap: 1.5rem;
-    }
-
-    .education_section .news.first {
-        grid-row: span 4;
-    }
 
 
 
@@ -1249,7 +1248,7 @@ aside {
 
 
     .adv.vertical {
-        max-width: 300px;
+        width: 300px;
         height: 250px;
     }
 
