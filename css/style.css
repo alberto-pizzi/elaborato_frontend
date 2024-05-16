@@ -828,7 +828,12 @@ aside {
 
 @media screen and (max-width: 480px) {
 
-    .the_region .news.first .image_box,.education_section .news.first .image_box,.sport_section .news.first .image_box{
+    .last_news_box .last_news{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .last_news_box .news.first .image_box,.the_region .news.first .image_box,.education_section .news.first .image_box,.sport_section .news.first .image_box{
         width: 100vw;
         margin-left: calc(-1 * var(--left-right-section-margin));
         margin-bottom: 20px;
