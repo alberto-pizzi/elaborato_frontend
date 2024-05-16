@@ -591,8 +591,12 @@ section {
     transition: color .3s;
 }
 
-.news.first:first-child h2  {
+.news.first:first-child h2,.last_news_box .main_news_box h2  {
     font-size: 32px;
+}
+
+.last_news_box #news_sub_box .news h2{
+    font-size: 28px;
 }
 
 .sport_section .news.first h2{
