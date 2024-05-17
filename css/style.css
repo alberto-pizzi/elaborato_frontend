@@ -362,7 +362,7 @@ div.nav_icons {
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: -1px;
-    padding: 10px 10px 5px 0;
+    padding: 0 10px 5px 0;
     margin: 0;
 }
 
@@ -370,7 +370,6 @@ div.nav_icons {
     width: 100%;
     height: max-content;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     grid-auto-columns: min-content;
 }
 
@@ -804,6 +803,14 @@ aside {
     border-bottom: 1px solid var(--separator-color);
 }
 
+.popup_box#menu .menu_item{
+    margin-bottom: 5px;
+}
+
+.popup_box#menu .menu_sub_box{
+    margin-bottom: 12px;
+}
+
 aside .aside_column .menu_item{
     margin-bottom: 12px;
 }
@@ -891,7 +898,6 @@ aside .aside_column .menu_item:not(.title) a{
     .popup_box#menu .menu_sub_box {
         justify-self: center;
         max-width: 220px;
-        width: 200px;
     }
 
     aside {
@@ -962,6 +968,11 @@ aside .aside_column .menu_item:not(.title) a{
 
     aside .menu_sub_box{
         width: 210px;
+    }
+
+    .popup_box#menu .menu_sub_box{
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -1253,6 +1264,21 @@ aside .aside_column .menu_item:not(.title) a{
         width: 220px;
     }
 
+
+    .popup_box#menu .menu_item:not(.title){
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .popup_box#menu .menu_item.title{
+        padding-left: 20px;
+    }
+
+
+    .popup_box#menu .menu_sub_box{
+        margin-left: 0;
+        margin-right: 0;
+    }
 
 
 
