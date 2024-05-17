@@ -342,7 +342,6 @@ div.nav_icons {
     background-color: goldenrod;
     width: 100%;
     height: fit-content;
-    padding-bottom: 12px;
 
 
 }
@@ -351,7 +350,7 @@ div.nav_icons {
     width: fit-content;
     background-color: darkmagenta;
     color: black;
-    margin: 1px 20px 2px 20px;
+    margin: 1px 20px 2px 0;
     font-size: 16px;
 
 }
@@ -363,7 +362,7 @@ div.nav_icons {
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: -1px;
-    padding: 10px 10px 5px 20px;
+    padding: 10px 10px 5px 0;
     margin: 0;
 }
 
@@ -647,8 +646,10 @@ time {
 .the_region .news, .nation_and_world .news,.inquirer_newsletters .news {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var(--separator-color);
+}
 
+.the_region .news:not(:last-child),.nation_and_world .news:not(:last-child){
+    border-bottom: 1px solid var(--separator-color);
 }
 
 .the_region .news {
@@ -799,10 +800,16 @@ aside {
     margin-top: 16px;
 }
 
-
-
 .last_news_box .main_news_box .news:not(:last-child){
     border-bottom: 1px solid var(--separator-color);
+}
+
+aside .aside_column .menu_item{
+    margin-bottom: 12px;
+}
+
+aside .aside_column .menu_item:not(.title) a{
+    font-weight: 500;
 }
 
 
@@ -841,6 +848,13 @@ aside {
         width: 100vw;
         margin-left: calc(-1 * var(--left-right-section-margin));
         margin-bottom: 20px;
+    }
+
+    .menu_item{
+        margin-left: 15px;
+    }
+    .menu_item.title{
+        padding-left: 15px;
     }
 }
 
@@ -938,6 +952,18 @@ aside {
         margin-bottom: 8px;
     }
 
+    aside .aside_column .menu_sub_box.last{
+        margin-bottom: 40px;
+    }
+
+    aside .aside_column{
+        margin: 12px auto;
+    }
+
+    aside .menu_sub_box{
+        width: 210px;
+    }
+
 }
 
 
@@ -979,6 +1005,10 @@ aside {
 @media screen and (max-width: 767px) {
     .art_section .news:not(:first-child),.inquirer_newsletters .news:not(:first-child),.nation_and_world .news:not(:first-child){
         margin-top: 16px;
+    }
+
+    .inquirer_newsletters .news:not(:last-child){
+        border-bottom: 1px solid var(--separator-color);
     }
 }
 
