@@ -83,7 +83,7 @@ footer {
 .footer_links_box {
     display: flex;
     flex-direction: column;
-
+    max-width: 425px;
 
 }
 
@@ -1370,6 +1370,10 @@ aside .aside_column .menu_item:not(.title) a{
 
     .news h2 {
         font-size: 24px;
+    }
+
+    .footer_links_box{
+        max-width: fit-content;
     }
 
 }
