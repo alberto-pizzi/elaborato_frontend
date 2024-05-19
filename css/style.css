@@ -454,7 +454,7 @@ div.nav_icons {
 
 }
 
-.box_title a{
+.box_title a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -552,8 +552,7 @@ section {
 }
 
 
-
-.news.first h2{
+.news.first h2 {
     font-size: 28px;
 }
 
@@ -563,7 +562,7 @@ section {
     padding-top: 8px;
 }
 
-.art_section .news p,.sport_section .news p{
+.art_section .news p, .sport_section .news p {
     font-size: 14px;
 }
 
@@ -588,15 +587,15 @@ section {
     transition: color .3s;
 }
 
-.news.first:first-child h2,.last_news_box .main_news_box h2  {
+.news.first:first-child h2, .last_news_box .main_news_box h2 {
     font-size: 32px;
 }
 
-.last_news_box #news_sub_box .news h2{
+.last_news_box #news_sub_box .news h2 {
     font-size: 28px;
 }
 
-.sport_section .news.first h2{
+.sport_section .news.first h2 {
     font-size: 24px;
 }
 
@@ -641,12 +640,12 @@ time {
 }
 
 
-.the_region .news, .nation_and_world .news,.inquirer_newsletters .news {
+.the_region .news, .nation_and_world .news, .inquirer_newsletters .news {
     display: flex;
     justify-content: space-between;
 }
 
-.the_region .news:not(:last-child){
+.the_region .news:not(:last-child) {
     border-bottom: 1px solid var(--separator-color);
 }
 
@@ -654,7 +653,7 @@ time {
     flex-direction: row-reverse;
 }
 
-.the_region .news.first{
+.the_region .news.first {
     flex-direction: column;
 }
 
@@ -698,7 +697,7 @@ time {
     justify-content: space-between;
 }
 
-.education_section .news:not(.first),.the_region .news:not(.first){
+.education_section .news:not(.first), .the_region .news:not(.first) {
     margin-top: 16px;
 }
 
@@ -774,69 +773,70 @@ aside {
 }
 
 
-.the_region .other_news .image_box{
+.the_region .other_news .image_box {
     padding-left: 20px;
 }
 
-.the_region .other_news .image_box{
+.the_region .other_news .image_box {
     flex: 0 0 25%;
 }
 
 
-
-.inquirer_newsletters .news .image_box,.nation_and_world .news .image_box,.art_section .news .image_box{
+.inquirer_newsletters .news .image_box, .nation_and_world .news .image_box, .art_section .news .image_box {
     padding: 0 20px 0 0;
     min-width: 60px;
 }
 
-.art_section .news:not(:first-child){
+.art_section .news:not(:first-child) {
     margin-top: 16px;
 }
 
-.sport_section .articles_preview{
+.sport_section .articles_preview {
     margin-top: 16px;
 }
 
-.last_news_box .main_news_box .news:not(:last-child){
+.last_news_box .main_news_box .news:not(:last-child) {
     border-bottom: 1px solid var(--separator-color);
 }
 
-.popup_box#menu .menu_item{
+.popup_box#menu .menu_item {
     margin-bottom: 5px;
 }
 
-.popup_box#menu .menu_sub_box{
+.popup_box#menu .menu_sub_box {
     margin-bottom: 12px;
 }
 
-aside .aside_column .menu_item{
+aside .aside_column .menu_item {
     margin-bottom: 12px;
 }
 
-aside .aside_column .menu_item:not(.title) a{
+aside .aside_column .menu_item:not(.title) a {
     font-weight: 500;
 }
 
 
+@media screen and (max-width: 280px) {
 
-@media screen and (max-width: 280px){
-
-    section *{
+    section * {
         overflow: hidden;
     }
-    .app_bar,main{
+
+    .app_bar, main {
         overflow-x: auto;
     }
-    .articles_preview{
+
+    .articles_preview {
         min-width: 100px;
 
     }
-    .the_region .other_news{
+
+    .the_region .other_news {
         min-width: 300px;
 
     }
 
-    .nation_and_world *{
+    .nation_and_world * {
         overflow: hidden;
     }
 
@@ -845,75 +845,78 @@ aside .aside_column .menu_item:not(.title) a{
 
 @media screen and (max-width: 480px) {
 
-    .last_news_box .last_news{
+    .last_news_box .last_news {
         display: flex;
         flex-direction: column;
     }
 
-    .last_news_box .news.first .image_box,.the_region .news.first .image_box,.education_section .news.first .image_box,.sport_section .news.first .image_box{
+    .last_news_box .news.first .image_box, .the_region .news.first .image_box, .education_section .news.first .image_box, .sport_section .news.first .image_box {
         width: 100vw;
         margin-left: calc(-1 * var(--left-right-section-margin));
         margin-bottom: 20px;
     }
 
-    .menu_item{
+    .menu_item {
         margin-left: 15px;
     }
-    .menu_item.title{
+
+    .menu_item.title {
         padding-left: 15px;
     }
 
-    .secondary_categories{
+    .secondary_categories {
         display: flex;
         flex-direction: column;
         height: 500px;
         flex-wrap: wrap;
     }
-    .secondary_categories .menu_sub_box#philly_tips{
+
+    .secondary_categories .menu_sub_box#philly_tips {
         order: 1;
     }
 
-    .secondary_categories .menu_sub_box#your_day{
+    .secondary_categories .menu_sub_box#your_day {
         order: 2;
     }
-    .secondary_categories .menu_sub_box#marketplace{
+
+    .secondary_categories .menu_sub_box#marketplace {
         order: 3;
     }
 
-    .secondary_categories .menu_sub_box#people{
+    .secondary_categories .menu_sub_box#people {
         order: 4;
     }
 
-    .secondary_categories .menu_sub_box#get_in_touch{
+    .secondary_categories .menu_sub_box#get_in_touch {
         order: 5;
     }
 
-    .adv_box{
+    .adv_box {
         overflow: hidden;
     }
 
-    .nation_and_world .articles{
+    .nation_and_world .articles {
         display: flex;
         flex-direction: column;
     }
 
-    .nation_and_world .articles .articles_sub_box{
+    .nation_and_world .articles .articles_sub_box {
         display: contents;
     }
 
-    .nation_and_world .articles .news{
+    .nation_and_world .articles .news {
         border-bottom: 1px solid var(--separator-color);
     }
 
-    .nation_and_world .articles .articles_sub_box:last-child .news:last-child{
+    .nation_and_world .articles .articles_sub_box:last-child .news:last-child {
         border: none;
     }
 
-    aside .aside_column .menu_sub_box.last{
+    aside .aside_column .menu_sub_box.last {
         margin-bottom: 12px;
     }
 
-    .nation_and_world .articles_sub_box:first-child .news:first-child{
+    .nation_and_world .articles_sub_box:first-child .news:first-child {
         margin-top: 0;
     }
 
@@ -949,7 +952,7 @@ aside .aside_column .menu_item:not(.title) a{
         padding: 20px 20px 50px;
     }
 
-    .popup_box#menu .menu_sub_box{
+    .popup_box#menu .menu_sub_box {
         max-width: 200px;
         width: 200px;
     }
@@ -962,60 +965,60 @@ aside .aside_column .menu_item:not(.title) a{
         grid-template-columns: 1fr 1fr;
     }
 
-    .the_region .news.first{
+    .the_region .news.first {
         flex-direction: row-reverse;
 
     }
 
 
-    .the_region .articles_preview{
+    .the_region .articles_preview {
         padding: 0;
     }
 
-    .the_region .main_news .image_box{
+    .the_region .main_news .image_box {
         flex: 0 0 25%;
     }
 
-    .the_region .main_news .image_box{
+    .the_region .main_news .image_box {
         padding-left: 20px;
     }
 
-    .the_region .other_news_2{
+    .the_region .other_news_2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
     }
 
 
-    .nation_and_world .articles{
+    .nation_and_world .articles {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .nation_and_world .articles_sub_box:first-child{
+    .nation_and_world .articles_sub_box:first-child {
         border-right: 1px solid var(--separator-color);
     }
 
-    .nation_and_world .articles_sub_box{
+    .nation_and_world .articles_sub_box {
         display: flex;
         flex-direction: column;
 
     }
 
-    .nation_and_world .articles_sub_box .news:first-child{
+    .nation_and_world .articles_sub_box .news:first-child {
         margin-top: 0;
     }
 
 
-    .nation_and_world .news{
+    .nation_and_world .news {
         margin: 20px 20px 0;
     }
 
-    .nation_and_world .news .image_box{
+    .nation_and_world .news .image_box {
         padding-right: 20px;
     }
 
-    .art_section .news p,.sport_section .news p{
+    .art_section .news p, .sport_section .news p {
         font-size: 16px;
     }
 
@@ -1025,23 +1028,23 @@ aside .aside_column .menu_item:not(.title) a{
         gap: 1.5rem;
     }
 
-    .education_section .news.first .image_box{
+    .education_section .news.first .image_box {
         margin-bottom: 8px;
     }
 
-    aside .aside_column .menu_sub_box.last{
+    aside .aside_column .menu_sub_box.last {
         margin-bottom: 40px;
     }
 
-    aside .aside_column{
+    aside .aside_column {
         margin: 12px auto;
     }
 
-    aside .menu_sub_box{
+    aside .menu_sub_box {
         width: 210px;
     }
 
-    .popup_box#menu .menu_sub_box{
+    .popup_box#menu .menu_sub_box {
         margin-left: auto;
         margin-right: auto;
     }
@@ -1078,26 +1081,24 @@ aside .aside_column .menu_item:not(.title) a{
         transform: scale(1) translateX(0);
     }
 
-    .footer_sub_box{
+    .footer_sub_box {
         padding: 22px 120px;
     }
 
 }
 
 @media screen and (max-width: 767px) {
-    .art_section .news:not(:first-child),.inquirer_newsletters .news:not(:first-child),.nation_and_world .news{
+    .art_section .news:not(:first-child), .inquirer_newsletters .news:not(:first-child), .nation_and_world .news {
         margin-top: 16px;
     }
 
 
-
-    .inquirer_newsletters .news:not(:last-child){
+    .inquirer_newsletters .news:not(:last-child) {
         border-bottom: 1px solid var(--separator-color);
     }
 
 
-
-    .nation_and_world .articles_sub_box .news:not(:last-child){
+    .nation_and_world .articles_sub_box .news:not(:last-child) {
         border-bottom: 1px solid var(--separator-color);
     }
 }
@@ -1120,42 +1121,42 @@ aside .aside_column .menu_item:not(.title) a{
         gap: .5rem;
     }
 
-    .the_region .other_news{
+    .the_region .other_news {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .nation_and_world .news,.inquirer_newsletters .news {
+    .nation_and_world .news, .inquirer_newsletters .news {
         flex-direction: column;
         margin: 0;
         border: none;
     }
 
-    .nation_and_world .articles_sub_box{
+    .nation_and_world .articles_sub_box {
         display: contents;
     }
 
-    .nation_and_world .articles,.inquirer_newsletters .articles {
+    .nation_and_world .articles, .inquirer_newsletters .articles {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2rem;
     }
 
-    .inquirer_newsletters .news .image_box,.nation_and_world .news .image_box{
+    .inquirer_newsletters .news .image_box, .nation_and_world .news .image_box {
         padding: 0
     }
 
-    .inquirer_newsletters .news,.nation_and_world .news{
+    .inquirer_newsletters .news, .nation_and_world .news {
         margin-top: 0;
     }
 
 
-    .the_region .other_news_2{
+    .the_region .other_news_2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    .the_region .other_news_2 .news{
+    .the_region .other_news_2 .news {
         border: none;
     }
 
@@ -1167,7 +1168,7 @@ aside .aside_column .menu_item:not(.title) a{
 }
 
 @media screen and (max-width: 1024px) {
-    .popup_box#menu{
+    .popup_box#menu {
         padding-bottom: 91px;
     }
 
@@ -1326,7 +1327,7 @@ aside .aside_column .menu_item:not(.title) a{
         margin-left: 35px;
     }
 
-    .popup_box#menu .categories  .menu_sub_box {
+    .popup_box#menu .categories .menu_sub_box {
         justify-self: center;
         max-width: 220px;
     }
@@ -1337,38 +1338,39 @@ aside .aside_column .menu_item:not(.title) a{
         grid-template-columns: repeat(3, minmax(0, 1fr));
         overflow: hidden;
     }
-/* FIXME impostarlo peri i giusti px */
-    .secondary_categories{
+
+    /* FIXME impostarlo peri i giusti px */
+    .secondary_categories {
         display: flex;
         flex-direction: column;
         height: 544px;
         flex-wrap: wrap;
     }
 
-    .popup_box#menu .secondary_categories .menu_sub_box{
+    .popup_box#menu .secondary_categories .menu_sub_box {
         max-width: 196px;
         width: auto;
     }
 
-    .secondary_categories .menu_sub_box#philly_tips{
+    .secondary_categories .menu_sub_box#philly_tips {
         order: 1;
     }
 
-    .secondary_categories .menu_sub_box#your_day{
+    .secondary_categories .menu_sub_box#your_day {
         order: 2;
     }
-    .secondary_categories .menu_sub_box#marketplace{
+
+    .secondary_categories .menu_sub_box#marketplace {
         order: 3;
     }
 
-    .secondary_categories .menu_sub_box#people{
+    .secondary_categories .menu_sub_box#people {
         order: 4;
     }
 
-    .secondary_categories .menu_sub_box#get_in_touch{
+    .secondary_categories .menu_sub_box#get_in_touch {
         order: 5;
     }
-
 
 
     .last_news_box .last_news {
@@ -1387,23 +1389,20 @@ aside .aside_column .menu_item:not(.title) a{
     }
 
 
-
-    .popup_box#menu .menu_item:not(.title){
+    .popup_box#menu .menu_item:not(.title) {
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    .popup_box#menu .menu_item.title{
+    .popup_box#menu .menu_item.title {
         padding-left: 20px;
     }
 
 
-    .popup_box#menu .menu_sub_box{
+    .popup_box#menu .menu_sub_box {
         margin-left: 0;
         margin-right: 0;
     }
-
-
 
 
     aside {
@@ -1430,7 +1429,7 @@ aside .aside_column .menu_item:not(.title) a{
     }
 
 
-    .box_title,.latest_news{
+    .box_title, .latest_news {
         margin: 0;
     }
 
@@ -1457,7 +1456,7 @@ aside .aside_column .menu_item:not(.title) a{
         font-size: 24px;
     }
 
-    .footer_links_box{
+    .footer_links_box {
         max-width: fit-content;
     }
 
