@@ -646,7 +646,7 @@ time {
     justify-content: space-between;
 }
 
-.the_region .news:not(:last-child),.nation_and_world .news:not(:last-child){
+.the_region .news:not(:last-child){
     border-bottom: 1px solid var(--separator-color);
 }
 
@@ -892,6 +892,31 @@ aside .aside_column .menu_item:not(.title) a{
         overflow: hidden;
     }
 
+    .nation_and_world .articles{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nation_and_world .articles .articles_sub_box{
+        display: contents;
+    }
+
+    .nation_and_world .articles .news{
+        border-bottom: 1px solid var(--separator-color);
+    }
+
+    .nation_and_world .articles .articles_sub_box:last-child .news:last-child{
+        border: none;
+    }
+
+    aside .aside_column .menu_sub_box.last{
+        margin-bottom: 12px;
+    }
+
+    .nation_and_world .articles_sub_box:first-child .news:first-child{
+        margin-top: 0;
+    }
+
 }
 
 
@@ -961,10 +986,26 @@ aside .aside_column .menu_item:not(.title) a{
 
     }
 
+
     .nation_and_world .articles{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .nation_and_world .articles_sub_box:first-child{
+        border-right: 1px solid var(--separator-color);
+    }
+
+    .nation_and_world .articles_sub_box{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .nation_and_world .articles_sub_box .news:first-child{
+        margin-top: 0;
+    }
+
 
     .nation_and_world .news{
         margin: 20px 20px 0;
@@ -1044,11 +1085,19 @@ aside .aside_column .menu_item:not(.title) a{
 }
 
 @media screen and (max-width: 767px) {
-    .art_section .news:not(:first-child),.inquirer_newsletters .news:not(:first-child),.nation_and_world .news:not(:first-child){
+    .art_section .news:not(:first-child),.inquirer_newsletters .news:not(:first-child),.nation_and_world .news{
         margin-top: 16px;
     }
 
+
+
     .inquirer_newsletters .news:not(:last-child){
+        border-bottom: 1px solid var(--separator-color);
+    }
+
+
+
+    .nation_and_world .articles_sub_box .news:not(:last-child){
         border-bottom: 1px solid var(--separator-color);
     }
 }
@@ -1080,6 +1129,10 @@ aside .aside_column .menu_item:not(.title) a{
         flex-direction: column;
         margin: 0;
         border: none;
+    }
+
+    .nation_and_world .articles_sub_box{
+        display: contents;
     }
 
     .nation_and_world .articles,.inquirer_newsletters .articles {
