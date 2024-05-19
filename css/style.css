@@ -819,6 +819,7 @@ aside .aside_column .menu_item:not(.title) a{
 }
 
 
+
 @media screen and (max-width: 280px){
 
     section *{
@@ -863,9 +864,6 @@ aside .aside_column .menu_item:not(.title) a{
         padding-left: 15px;
     }
 
-    .popup_box#menu{
-        padding-bottom: 91px;
-    }
 }
 
 
@@ -1087,6 +1085,12 @@ aside .aside_column .menu_item:not(.title) a{
 
 }
 
+@media screen and (max-width: 1024px) {
+    .popup_box#menu{
+        padding-bottom: 91px;
+    }
+
+}
 
 @media screen and (min-width: 1024px) {
 
