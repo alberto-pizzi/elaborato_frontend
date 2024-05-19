@@ -864,6 +864,31 @@ aside .aside_column .menu_item:not(.title) a{
         padding-left: 15px;
     }
 
+    .secondary_categories{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        flex-wrap: wrap;
+    }
+    .secondary_categories .menu_sub_box#philly_tips{
+        order: 1;
+    }
+
+    .secondary_categories .menu_sub_box#your_day{
+        order: 2;
+    }
+    .secondary_categories .menu_sub_box#marketplace{
+        order: 3;
+    }
+
+    .secondary_categories .menu_sub_box#people{
+        order: 4;
+    }
+
+    .secondary_categories .menu_sub_box#get_in_touch{
+        order: 5;
+    }
+
 }
 
 
