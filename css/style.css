@@ -246,7 +246,7 @@ div.nav_icons {
     text-decoration: underline;
 }
 
-.popup_box#menu .menu_sub_box {
+.popup_box#menu .categories .menu_sub_box {
     justify-self: center;
     width: 100%;
 }
@@ -340,7 +340,6 @@ div.nav_icons {
     display: flex;
     flex-direction: column;
     background-color: goldenrod;
-    width: 100%;
     height: fit-content;
 
 
@@ -863,6 +862,10 @@ aside .aside_column .menu_item:not(.title) a{
     .menu_item.title{
         padding-left: 15px;
     }
+
+    .popup_box#menu{
+        padding-bottom: 91px;
+    }
 }
 
 
@@ -895,10 +898,11 @@ aside .aside_column .menu_item:not(.title) a{
         padding: 20px 20px 50px;
     }
 
-    .popup_box#menu .menu_sub_box {
-        justify-self: center;
-        max-width: 220px;
+    .popup_box#menu .menu_sub_box{
+        max-width: 200px;
+        width: 200px;
     }
+
 
     aside {
         background-color: crimson;
@@ -1237,12 +1241,49 @@ aside .aside_column .menu_item:not(.title) a{
         margin-left: 35px;
     }
 
+    .popup_box#menu .categories  .menu_sub_box {
+        justify-self: center;
+        max-width: 220px;
+    }
+
     .categories {
         height: fit-content;
         width: 100%;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         overflow: hidden;
     }
+/* FIXME impostarlo peri i giusti px */
+    .secondary_categories{
+        display: flex;
+        flex-direction: column;
+        height: 544px;
+        flex-wrap: wrap;
+    }
+
+    .popup_box#menu .secondary_categories .menu_sub_box{
+        max-width: 196px;
+        width: auto;
+    }
+
+    .secondary_categories .menu_sub_box#philly_tips{
+        order: 1;
+    }
+
+    .secondary_categories .menu_sub_box#your_day{
+        order: 2;
+    }
+    .secondary_categories .menu_sub_box#marketplace{
+        order: 3;
+    }
+
+    .secondary_categories .menu_sub_box#people{
+        order: 4;
+    }
+
+    .secondary_categories .menu_sub_box#get_in_touch{
+        order: 5;
+    }
+
 
 
     .last_news_box .last_news {
@@ -1260,9 +1301,6 @@ aside .aside_column .menu_item:not(.title) a{
         margin: var(--navbar-height-extended) auto;
     }
 
-    .menu_sub_box {
-        width: 220px;
-    }
 
 
     .popup_box#menu .menu_item:not(.title){
