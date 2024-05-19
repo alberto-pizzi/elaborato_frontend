@@ -745,8 +745,7 @@ aside {
 
 /* FIXME correggere width per schermi molto piccoli */
 .adv.vertical {
-
-    max-width: 300px;
+    width: 300px;
     height: 250px;
 
 }
@@ -887,6 +886,10 @@ aside .aside_column .menu_item:not(.title) a{
 
     .secondary_categories .menu_sub_box#get_in_touch{
         order: 5;
+    }
+
+    .adv_box{
+        overflow: hidden;
     }
 
 }
