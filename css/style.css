@@ -825,12 +825,16 @@ aside .aside-column .menu-item:not(.title) a {
 
 .education-section .other-news .news:not(.first) .image-box{
     width: 40%;
+}
+
+.education-section .other-news .news:not(.first) .image-box,.sport-section .news:not(.first) .image-box{
     min-width: 80px;
 }
 
+
 @media screen and (max-width: 280px) {
 
-    section * {
+    section *,.nation-and-world *,footer *,aside * {
         overflow: hidden;
     }
 
@@ -846,10 +850,6 @@ aside .aside-column .menu-item:not(.title) a {
     .the-region .other-news {
         min-width: 300px;
 
-    }
-
-    .nation-and-world * {
-        overflow: hidden;
     }
 
 
