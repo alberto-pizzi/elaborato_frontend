@@ -12,16 +12,16 @@ function getTodaysDate() {
     return daysInWeek[numDay] + ", " + months[month] + ' ' + day + ', ' + year;
 }
 
-document.getElementById("todays_date").textContent = getTodaysDate();
+document.getElementById("todays-date").textContent = getTodaysDate();
 
 //interactive changes with media queries
 function changeSignInButton(){
 
     if (!media1024px.matches){
-        document.getElementById("sign_in").textContent = "Sign in / sign up"
+        document.getElementById("sign-in").textContent = "Sign in / sign up"
     }
     else{
-        document.getElementById("sign_in").textContent = "Sign in"
+        document.getElementById("sign-in").textContent = "Sign in"
     }
 }
 
@@ -46,18 +46,18 @@ function updateBoxLeftPos(container, key) {
 
 
 function closeAllPopups(){
-    let popupMenus = document.querySelectorAll('.popup_box[id]');
+    let popupMenus = document.querySelectorAll('.popup-box[id]');
     popupMenus.forEach(function(menu) {
             menu.style.display = "none";
     });
 }
 
 function toggleBox(box, button, display){
-    let container = document.querySelector('.popup_box' + '#' + box);
+    let container = document.querySelector('.popup-box' + '#' + box);
     let key = document.getElementById(button);
-    let navBar = document.querySelector('.app_bar');
+    let navBar = document.querySelector('.app-bar');
 
-    let popupMenus = document.querySelectorAll('.popup_box[id]');
+    let popupMenus = document.querySelectorAll('.popup-box[id]');
     popupMenus.forEach(function(menu) {
         if (menu !== container) {
             menu.style.display = "none";
@@ -83,7 +83,7 @@ window.addEventListener('resize', function() {
 });
 
 function toggleExtend(){
-    let containers = document.querySelectorAll('.popup_box, .app_bar, .today_box, .nav_obj, .nav_bar, #header_logo, .button,.buttons_box .button#subscribe,.subscribe_box,.hidden_box, .head_banner, .buttons_box, main');
+    let containers = document.querySelectorAll('.popup-box, .app-bar, .today-box, .nav-obj, .nav-bar, #header-logo, .button,.buttons-box .button#subscribe,.subscribe-box,.hidden-box, .head-banner, .buttons-box, main');
     const extClassName = "extended";
 
     if (media1024px.matches) {
