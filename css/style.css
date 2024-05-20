@@ -783,7 +783,11 @@ aside {
 
 .inquirer-newsletters .news .image-box, .nation-and-world .news .image-box, .art-section .news .image-box {
     padding: 0 20px 0 0;
-    min-width: 60px;
+    min-width: 80px;
+}
+
+.art-section .news .image-box{
+    width: 40%;
 }
 
 .art-section .news:not(:first-child) {
