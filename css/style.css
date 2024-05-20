@@ -1101,6 +1101,29 @@ aside .aside_column .menu_item:not(.title) a {
     .nation_and_world .articles_sub_box .news:not(:last-child) {
         border-bottom: 1px solid var(--separator-color);
     }
+
+    .nation_and_world .news-image,.inquirer_newsletters .news-image{
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
+
+    .nation_and_world .image_box,.inquirer_newsletters .image_box{
+        width: 40%;
+    }
+
+    .nation_and_world .news>a,.inquirer_newsletters .news>a{
+        width: 100%;
+    }
+
+    .nation_and_world .articles_sub_box:first-child .news{
+        margin-left: 0;
+    }
+
+    .nation_and_world .articles_sub_box:last-child .news{
+        margin-right: 0;
+    }
+
+
 }
 
 
