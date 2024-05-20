@@ -823,6 +823,11 @@ aside .aside-column .menu-item:not(.title) a {
     margin-bottom: 16px;
 }
 
+.education-section .other-news .news:not(.first) .image-box{
+    width: 40%;
+    min-width: 80px;
+}
+
 @media screen and (max-width: 280px) {
 
     section * {
@@ -1053,6 +1058,7 @@ aside .aside-column .menu-item:not(.title) a {
         margin-right: auto;
     }
 
+
 }
 
 
@@ -1226,6 +1232,9 @@ aside .aside-column .menu-item:not(.title) a {
 
     .the-region .articles-sub-box .news:last-child{
         padding-bottom: 0;
+    }
+    .nation-and-world .news .image-box,.inquirer-newsletters .news .image-box{
+        margin-bottom: 18px;
     }
 
 }
