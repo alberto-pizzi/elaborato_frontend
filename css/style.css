@@ -832,6 +832,10 @@ aside .aside-column .menu-item:not(.title) a {
     height: auto;
 }
 
+.nation-and-world .articles *{
+    overflow: hidden;
+}
+
 
 @media screen and (max-width: 280px) {
 
