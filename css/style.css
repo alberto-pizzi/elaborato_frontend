@@ -831,6 +831,11 @@ aside .aside-column .menu-item:not(.title) a {
     min-width: 80px;
 }
 
+#header-logo>a{
+    width: 100%;
+    height: auto;
+}
+
 
 @media screen and (max-width: 280px) {
 
