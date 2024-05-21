@@ -47,9 +47,11 @@ function updateBoxLeftPos(container, key) {
 
 function closeAllPopups(){
     let popupMenus = document.querySelectorAll('.popup-box[id]');
+    let menuIcon = document.getElementById('menu-icon');
     popupMenus.forEach(function(menu) {
             menu.style.display = "none";
             menu.ariaExpanded = "false";
+            menuIcon.classList.replace("fa-times", "fa-bars")
     });
 }
 
