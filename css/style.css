@@ -636,7 +636,6 @@ time {
 
 .the-region .news, .nation-and-world .news, .inquirer-newsletters .news {
     display: flex;
-    justify-content: space-between;
 }
 
 .the-region .news:not(:last-child) {
@@ -1140,9 +1139,6 @@ aside .mobile-box{
         width: 40%;
     }
 
-    .nation-and-world .news>a,.inquirer-newsletters .news>a{
-        width: 100%;
-    }
 
     .nation-and-world .articles-sub-box:first-child .news{
         margin-left: 0;
