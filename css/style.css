@@ -742,7 +742,6 @@ aside {
 
 }
 
-/* FIXME correggere width per schermi molto piccoli */
 .adv.vertical {
     width: 300px;
     height: 250px;
@@ -1441,7 +1440,6 @@ aside .mobile-box{
         overflow: hidden;
     }
 
-    /* FIXME impostarlo peri i giusti px */
     .secondary-categories {
         display: flex;
         flex-direction: column;
@@ -1546,7 +1544,6 @@ aside .mobile-box{
         height: 250px;
     }
 
-    /* FIXME verificare compatibilità per Safari */
     @supports (position: sticky) {
         .adv.vertical, .adv-title {
             position: sticky;
