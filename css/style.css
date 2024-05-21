@@ -840,6 +840,14 @@ aside .aside-column .menu-item:not(.title) a {
     overflow: hidden;
 }
 
+aside .aside-column-sub-box,aside .mobile-box{
+    display: flex;
+}
+
+aside .mobile-box{
+    flex-direction: column;
+    width: 100%;
+}
 
 @media screen and (max-width: 280px) {
 
@@ -1071,7 +1079,9 @@ aside .aside-column .menu-item:not(.title) a {
         border-bottom: 1px solid var(--separator-color);
     }
 
-
+    aside .aside-column-sub-box{
+        flex-direction: column;
+    }
 
 
 }
