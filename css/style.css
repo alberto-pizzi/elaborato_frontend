@@ -13,6 +13,11 @@
     --hover-color: #1a6aff;
     --live-update-color: #e11d26;
     --tag-color: rgba(255, 204, 85);
+    --subscribe-button-color-dark: rgb(254, 213, 97);
+    --subscribe-button-color-light: rgb(245, 235, 0);
+    --adv-color: #999;
+    --footer-color: #eee;
+    --navbar-color: #fff;
 }
 
 
@@ -44,7 +49,7 @@ a {
 }
 
 footer {
-    background-color: #eee;
+    background-color: var(--footer-color);
     display: block;
     width: 100%;
     height: auto;
@@ -101,6 +106,7 @@ main {
 
 button {
     cursor: pointer;
+    background-color: var(--navbar-color);
 }
 
 .head-banner, .nav-obj, footer {
@@ -115,7 +121,7 @@ button {
     position: fixed;
     left: 0;
     top: 0;
-    background-color: lightgrey;
+    background-color: var(--navbar-color);
     width: 100%;
     height: var(--navbar-height-reduced);
     border-bottom: 2px solid black;
@@ -129,7 +135,6 @@ button {
 }
 
 .nav-obj {
-    background-color: green;
     display: block;
     width: fit-content;
     height: fit-content;
@@ -151,7 +156,6 @@ div.nav-icons {
     height: 20px;
     display: flex;
     vertical-align: baseline;
-    background-color: blue;
     float: left;
 }
 
@@ -175,7 +179,6 @@ div.nav-icons {
 }
 
 .buttons-box {
-    background-color: chocolate;
     align-items: center;
     display: flex;
     justify-content: flex-end;
@@ -195,7 +198,7 @@ div.nav-icons {
 
 
 .buttons-box .button#subscribe {
-    background-color: rgb(245, 235, 0);
+    background-color: var(--subscribe-button-color-dark);
     width: 100%;
     height: var(--subscribe-button-max480px);
     letter-spacing: .08em;
@@ -281,10 +284,10 @@ div.nav-icons {
 
 .popup-box#search-box {
     display: none;
+    background-color: var(--navbar-color);
     box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .1);
     width: 100%;
     padding: 18px 28px;
-    background-color: aquamarine;
     box-sizing: border-box;
 
 }
@@ -294,7 +297,6 @@ div.nav-icons {
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
-    background-color: chartreuse;
     padding: 10px 18px;
 
 }
@@ -302,7 +304,6 @@ div.nav-icons {
 .search-button {
     height: 25px;
     width: 25px;
-    background-color: orangered;
 }
 
 #search-icon {
@@ -311,14 +312,13 @@ div.nav-icons {
 
 #search-input {
     width: 100%;
-    background-color: darkred;
 
 }
 
 .popup-box {
     display: none;
     position: fixed;
-    top: var(--navbar-height-reduced);
+    top: calc(var(--navbar-height-reduced) + 1px);
 }
 
 
@@ -326,8 +326,7 @@ div.nav-icons {
     font-size: 16px;
     width: 100%;
     display: none;
-    background-color: crimson;
-
+    background-color: var(--navbar-color);
     grid-gap: 1rem;
     box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .1);
     align-items: center;
@@ -343,7 +342,6 @@ div.nav-icons {
 .menu-sub-box {
     display: flex;
     flex-direction: column;
-    background-color: goldenrod;
     height: fit-content;
 
 
@@ -351,7 +349,6 @@ div.nav-icons {
 
 .menu-item {
     width: fit-content;
-    background-color: darkmagenta;
     color: black;
     margin: 1px 20px 2px 0;
     font-size: 16px;
@@ -361,7 +358,7 @@ div.nav-icons {
 .menu-item.title {
     width: auto;
     font-weight: bold;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid var(--separator-color);
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: -1px;
@@ -377,7 +374,6 @@ div.nav-icons {
 }
 
 .categories {
-    background-color: greenyellow;
     height: fit-content;
     display: block;
     width: 100%;
@@ -388,7 +384,6 @@ div.nav-icons {
 .secondary-categories {
     display: grid;
     gap: 1rem;
-    background-color: dodgerblue;
     grid-template-columns: 1fr 1fr;
 
 }
@@ -410,7 +405,6 @@ div.nav-icons {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     max-width: 100%;
-    background-color: cornflowerblue;
 }
 
 .last-news-box .last-news > div {
@@ -567,7 +561,6 @@ section {
 
 
 .correlated-articles-list {
-    background-color: crimson;
     list-style: none;
     max-width: 500px;
 }
@@ -719,7 +712,6 @@ time {
 }
 
 aside {
-    background-color: crimson;
     display: grid;
     gap: 1rem;
 
@@ -736,7 +728,7 @@ aside {
 
 .adv {
     top: calc(var(--navbar-height-reduced) + 20px);
-    background-color: lightcoral;
+    background-color: lightsteelblue;
     box-sizing: border-box;
     margin: 0 auto;
 
@@ -761,7 +753,6 @@ aside {
     font-size: 9px;
     font-weight: 300;
     text-transform: uppercase;
-    background-color: gold;
     text-align: center;
     max-height: 100%;
     z-index: -1;
@@ -987,7 +978,6 @@ aside .mobile-box{
 
 
     aside {
-        background-color: crimson;
         display: grid;
         gap: 1rem;
         grid-template-columns: 1fr 1fr;
@@ -1280,7 +1270,6 @@ aside .mobile-box{
     .nav-bar {
         margin-left: auto;
         margin-right: auto;
-        background-color: deeppink;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -1328,7 +1317,6 @@ aside .mobile-box{
     }
 
     .today-box.extended {
-        background-color: aqua;
         display: flex;
         flex-direction: column;
         margin-right: 10px;
