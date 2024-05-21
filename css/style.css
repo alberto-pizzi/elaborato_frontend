@@ -539,11 +539,6 @@ section {
     flex-direction: column;
 }
 
-.separator {
-    border-bottom: 1px solid var(--separator-color);
-    margin-bottom: 16px;
-}
-
 .news h2 {
     font-size: 20px;
     font-weight: 600;
@@ -798,8 +793,9 @@ aside {
     margin-top: 16px;
 }
 
-.last-news-box .main-news-box .news:not(:last-child) {
+.last-news-box .news:not(:last-child) {
     border-bottom: 1px solid var(--separator-color);
+    margin-bottom: 16px;
 }
 
 .popup-box#menu .menu-item {
