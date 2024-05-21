@@ -1000,7 +1000,7 @@ aside .aside-column .menu-item:not(.title) a {
     .the-region .other-news-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
+        gap: 2rem;
     }
 
 
@@ -1061,6 +1061,10 @@ aside .aside-column .menu-item:not(.title) a {
     .popup-box#menu .menu-sub-box {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .the-region .other-news-2 .news{
+        border-bottom: 1px solid var(--separator-color);
     }
 
 
@@ -1208,6 +1212,7 @@ aside .aside-column .menu-item:not(.title) a {
     .the-region .other-news-2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
     }
 
     .the-region .other-news-2 .news {
