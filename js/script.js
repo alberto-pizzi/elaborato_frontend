@@ -49,6 +49,7 @@ function closeAllPopups(){
     let popupMenus = document.querySelectorAll('.popup-box[id]');
     popupMenus.forEach(function(menu) {
             menu.style.display = "none";
+            menu.ariaExpanded = "false";
     });
 }
 
@@ -56,20 +57,33 @@ function toggleBox(box, button, display){
     let container = document.querySelector('.popup-box' + '#' + box);
     let key = document.getElementById(button);
     let navBar = document.querySelector('.app-bar');
+    let menuIcon = document.getElementById('menu-icon');
 
     let popupMenus = document.querySelectorAll('.popup-box[id]');
     popupMenus.forEach(function(menu) {
         if (menu !== container) {
             menu.style.display = "none";
+            menu.ariaExpanded = "false";
+            if (box === "menu") {
+                menuIcon.classList.replace("fa-times", "fa-bars")
+            }
         }
     });
 
     if (container.style.display === "none"){
         container.style.display = display;
         updateBoxLeftPos(container,key);
+        container.ariaExpanded = "true";
+        if (box === "menu") {
+            menuIcon.classList.replace("fa-bars", "fa-times")
+        }
 
     } else{
         container.style.display = "none";
+        container.ariaExpanded = "false";
+        if (box === "menu") {
+            menuIcon.classList.replace("fa-times", "fa-bars")
+        }
     }
 }
 

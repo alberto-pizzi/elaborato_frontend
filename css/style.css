@@ -147,12 +147,16 @@ div.nav-icons {
 
 .nav-icon {
     padding: 8px;
-    width: auto;
+    width: 20px;
     height: 20px;
     display: flex;
     vertical-align: baseline;
     background-color: blue;
     float: left;
+}
+
+#menu-icon{
+    font-size: 20px;
 }
 
 .head-banner {
@@ -1066,6 +1070,8 @@ aside .aside-column .menu-item:not(.title) a {
     .the-region .other-news-2 .news{
         border-bottom: 1px solid var(--separator-color);
     }
+
+
 
 
 }

@@ -61,11 +61,12 @@
             <div class="nav-obj">
                 <div class="nav-icons">
                     <button class="nav-button" id="menu-button" onclick="toggleBox('menu','menu-button','grid')">
-                        <img src="res/svg/menu-icon.svg" class="nav-icon" alt="Menu Icon"/>
+                         <!-- <img src="res/svg/menu-icon.svg" class="nav-icon" id="menu-icon" alt="Menu Icon"/> -->
+                        <i class="nav-icon fa fa-bars" id="menu-icon"></i>
                     </button>
                     <button class="nav-button" id="search-button"
                             onclick="toggleBox('search-box','search-button','block')">
-                        <img src="res/svg/search-icon.svg" class="nav-icon" alt="Search Icon"/>
+                        <img src="res/svg/search-icon.svg" class="nav-icon" id="search-icon-button" alt="Search Icon"/>
                     </button>
                 </div>
                 <div class="nav-bar">
@@ -85,11 +86,11 @@
                 </div>
             </div>
 
-            <div class="popup-box" id="menu">
+            <div class="popup-box" id="menu" aria-expanded="false">
 
 
                 <div class="categories">
-                    <div>
+                    <div class="menu-column">
                         <div class="menu-sub-box">
                             <a class="menu-item title" href="#">News</a>
                             <a class="menu-item" href="#">Quisque tempor</a>
@@ -120,7 +121,7 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="menu-column">
                         <div class="menu-sub-box">
                             <a class="menu-item title" href="#">Business</a>
                             <a class="menu-item" href="#">Quisque tempor</a>
@@ -146,7 +147,7 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="menu-column">
                         <div class="menu-sub-box">
                             <a class="menu-item title" href="#">Opinion</a>
                             <a class="menu-item" href="#">Quisque tempor</a>
@@ -241,7 +242,7 @@
 
             </div>
 
-            <div class="popup-box" id="search-box">
+            <div class="popup-box" id="search-box" aria-expanded="false">
                 <form class="search-bar" action="/search" method="get">
                     <input type="text" id="search-input" placeholder="Search">
                     <button type="submit" class="search-button">
@@ -1290,5 +1291,6 @@
 
 
 <script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/efe076a994.js" crossorigin="anonymous"></script>
 </body>
 </html>
